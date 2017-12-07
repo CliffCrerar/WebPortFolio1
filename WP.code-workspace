@@ -1,0 +1,18 @@
+{
+    "folders": [{
+        "path": "/Users/cliffordcrerar/GoogleDrive/WebPortfolio/WebPortFolio/"
+    }],
+    "settings": {
+        "html.format.enable": true,
+        "html.format.indentInnerHtml": true,
+        "html.suggest.html5": true,
+        "html.suggest.angular1": true,
+        "html.suggest.ionic": true,
+        "html.autoClosingTags": true,
+        "html.trace.server": "verbose",
+        "editor.tabCompletion": true,
+        "liveServer.settings.root": "/webportfolio/",
+        "liveServer.settings.port": 5500,
+        "liveServer.settings.ChromeDebuggingAttachment": true
+    }
+}
