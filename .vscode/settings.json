@@ -23,5 +23,27 @@
     "prettier.jsonEnable": ["json"],
     "path-intellisense.extensionOnImport": true,
     "npm.autoDetect": "on",
-    "npm.packageManager": "npm"
+    "npm.packageManager": "npm",
+    "beautify.language": {
+        "js": {
+            "type": ["javascript", "json"],
+            "filename": [".jshintrc", ".jsbeautify"]
+        },
+        "css": ["css", "scss"],
+        "html": ["htm", "html"]
+    },
+    "html.format.contentUnformatted": "pre,code,textarea",
+    "editor.autoClosingBrackets": true,
+    "editor.matchBrackets": true,
+    "bracketPairColorizer.contextualParsing": true,
+    "bracketPairColorizer.consecutivePairColors": ["()", "[]", "{}", ["Gold", "Orchid", "LightSkyBlue"], "Red"],
+    "explorer.decorations.colors": true,
+    "colorize.languages": ["css", "sass", "scss", "less", "postcss", "sss", "stylus", "xml", "svg"],
+    "colorize.activate_variables_support_beta": true,
+    "editor.tokenColorCustomizations": {
+        "variables": "#ABEBC6"
+    },
+    "javascript.nameSuggestions": true,
+    "javascript.referencesCodeLens.enabled": true,
+    "javascript.validate.enable": true
 }
