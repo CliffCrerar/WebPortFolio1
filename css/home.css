@@ -31,4 +31,6 @@ div.carousel-item {
     overflow: hidden;
 }
 
-div.carousel-item>img {}
+div.carousel-item {
+    overflow: hidden;
+}
