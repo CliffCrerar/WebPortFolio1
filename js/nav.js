@@ -1,7 +1,12 @@
 $(document).ready(function() {
     //control the navbar click
 
-    //const os = new OnScreen();
+    var os = new OnScreen({
+        tolerance: 50,
+        debounce: 100,
+        container: window
+    });
+
 
     $('nav.navbar').on('click', function(Event) {
         $('a.nav-link.active').removeClass('active');
@@ -10,6 +15,10 @@ $(document).ready(function() {
         }
     });
 
+    os.on('leave', 'nav.navbar-navbrand', function myCallback(element, event) {
+        console.log('left');
+        console.log(event);
+    });
 
     /*
     $('.parallax__group').mouseenter(function(Event) {

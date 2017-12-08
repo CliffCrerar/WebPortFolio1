@@ -62,5 +62,7 @@
     "uglifyjs": "2.4.10",
     "watch": "0.19.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "node.js": "0.0.0"
+  }
 }
