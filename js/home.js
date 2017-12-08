@@ -1,11 +1,15 @@
+/* This file contains all the scipts that are started when page loads */
+
 $(document).ready(function() {
-	var carImgHeight = $('#group1').height();
-	var carImgWidth = $('#group1').width();
-	console.log(carImgHeight);
-	console.log(carImgWidth);
-	var imgElement = $('img');
-	$.each(imgElement, function(i) {
-		imgElement[i].height = carImgHeight;
-		imgElement[i].width = carImgWidth;
-	});
+
+    //Correction of image viewhight
+    var carImgHeight = window.visualViewport.height;
+    var carImgWidth = window.visualViewport.width;
+    var imgElement = $('img');
+    $.each(imgElement, function(i) {
+        imgElement[i].height = carImgHeight;
+        imgElement[i].width = carImgWidth;
+    });
+
+
 });

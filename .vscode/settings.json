@@ -11,7 +11,7 @@
     "less.validate": true,
     "problems.decorations.enabled": true,
     "problems.autoReveal": true,
-    "prettier.parser": "babylon",
+    "prettier.parser": "flow",
     "prettier.trailingComma": "all",
     "npm-intellisense.scanDevDependencies": true,
     "npm-intellisense.importES6": true,
@@ -45,5 +45,22 @@
     },
     "javascript.nameSuggestions": true,
     "javascript.referencesCodeLens.enabled": true,
-    "javascript.validate.enable": true
+    "javascript.validate.enable": true,
+    "html.trace.server": "verbose",
+    "json.trace.server": "verbose",
+    "typescript.tsserver.trace": "off",
+    "css.trace.server": "verbose",
+    "liveServer.settings.ChromeDebuggingAttachment": true,
+    "liveServer.settings.NoBrowser": true,
+    "prettier.useTabs": true,
+    "eslint.enable": true,
+    "prettier.jsxBracketSameLine": true,
+    "prettier.singleQuote": true,
+    "emmet.includeLanguages": {
+        "HTML": "HTML5",
+        "javascript": "javascript"
+    },
+    "vscode-janus-debug.uploadOnSave": [
+        "nav"
+    ]
 }

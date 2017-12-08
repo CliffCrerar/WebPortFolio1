@@ -1,12 +1,44 @@
+:root {
+    --navgrow: 1;
+    --nabrandSize: calc(35px + 0.2vw)
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 .box1 {
     border: 5px solid yellow;
 }
 
 img {
-    width: 100%;
-    max-height: auto;
+    width: auto;
+    max-height: 100%;
     margin-left: 50%;
     transform: translateX(-50%);
+}
+
+.navbar-brand {
+    font-family: pacifico;
+    font-size: var(--nabrandSize) !important
+}
+
+a.nav-link:hover {
+    color: black;
+    background-color: rgb(221, 221, 221);
+    opacity: 1;
+    /*
+    -webkit-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+    -o-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+    transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+    */
+}
+
+a.nav-link.active {
+    color: black;
+    background-color: white;
+    opacity: 1;
 }
 
 a.nav-link {
@@ -15,11 +47,14 @@ a.nav-link {
     margin-top: 0%;
     padding-bottom: 0%;
     padding-top: 0%;
+    opacity: 0.6;
+    text-decoration-style: none;
+    text-decoration-color: white;
 }
 
-a.nav-link:hover {
-    color: red;
-    background-color: gray;
+a.nav-link.op {
+    opacity: 0.2;
+    pointer-events: none;
 }
 
 div>h3,
