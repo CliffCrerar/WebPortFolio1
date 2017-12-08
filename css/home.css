@@ -25,6 +25,12 @@ div>h2 {
     color: white;
 }
 
-div.carousel-inner>div.carousel-item>img {
-    border: 5px solid yellow
+carouselId {
+    max-height: 100%
+}
+
+div.carousel-item>img {
+    border: 5px solid yellow;
+    max-height: 730;
+    width: auto;
 }
