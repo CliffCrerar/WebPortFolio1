@@ -1,6 +1,11 @@
 $(document).ready(function() {
-    var carImgHeight = $('#group3').heigth();
-    $('div.carousel-item>img').forEach(img, function(img) {
-        cosole.log(img);
+    var carImgHeight = $('#group1').height();
+    var carImgWidth = $('#group1').width();
+    console.log(carImgHeight);
+    console.log(carImgWidth);
+    var imgElement = $('img');
+    $.each(imgElement, function(i) {
+        imgElement[i].height = carImgHeight;
+        imgElement[i].width = carImgWidth;
     });
-})
+});

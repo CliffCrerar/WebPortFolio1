@@ -1,10 +1,12 @@
 .box1 {
-    border: 5px solid yellow
+    border: 5px solid yellow;
 }
 
 img {
-    width: auto;
-    max-height: 100%;
+    width: 100%;
+    max-height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 a.nav-link {
@@ -25,12 +27,8 @@ div>h2 {
     color: white;
 }
 
-carouselId {
-    max-height: 100%
+div.carousel-item {
+    overflow: hidden;
 }
 
-div.carousel-item>img {
-    border: 5px solid yellow;
-    max-height: 730;
-    width: auto;
-}
+div.carousel-item>img {}
