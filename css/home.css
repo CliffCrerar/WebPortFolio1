@@ -57,6 +57,34 @@ a.nav-link.op {
     pointer-events: none;
 }
 
+div.navbar>div.row {
+    width: 100%;
+    margin: 2%
+}
+
+div.navbar>div.row:first-child {
+    width: 40%;
+    background-color: rgba(221, 221, 221, 0.5);
+    margin: auto;
+    border: 1px solid black;
+    border-radius: calc(24px + 0.5vh);
+    display: none;
+}
+
+div.navbar>div.row:first-child>p {
+    color: black;
+    margin: 0%;
+    font-size: calc(15px + 1vh);
+    width: 100%;
+}
+
+span.fa-chevron-circle-down {
+    position: relative;
+    left: 50%;
+    color: white;
+    font-size: calc(100% + 3vh)
+}
+
 div>h3,
 div>h2 {
     color: white;

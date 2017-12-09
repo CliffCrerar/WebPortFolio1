@@ -9,17 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
 
     <link rel="stylesheet" href="css/home.css">
-
+    <link rel="stylesheet" href="css/flash.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="js/home.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/flash.js"></script>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/paralax.css">
@@ -47,6 +49,18 @@
         <a class="nav-link" href="#group7">Thanks</a>
     </nav>
 
+    <!--Scroll instruction-->
+    <div class="navbar fixed-bottom container">
+        <div class="row alert center-text" role="alert">
+            <p class="text-center">Please scroll down</p>
+        </div>
+        <div class="row">
+            <span id="scrlprompt" class="fa fa-chevron-circle-down" aria-hidden="true" style="color: transparent">
+            </span>
+        </div>
+    </div>
+    <!--Scroll instruction-->
+
 
     <!--Parallax framework-->
     <div class="parallax">
@@ -55,9 +69,12 @@
         <div id="group1" class="parallax__group">
             <div class="parallax__layer parallax__layer--base">
                 <img class="" src="image/tie.jpg">
+
             </div>
         </div>
+        <!--Home-->
 
+        <!--Title-->
         <div id="group2" class="parallax__group">
             <div class="parallax__layer parallax__layer--base">
                 <div class="title">
@@ -69,7 +86,7 @@
                 <img class="" src="image/car3.png">
             </div>
         </div>
-        <!--Home-->
+        <!--Title-->
 
         <!--About-->
         <div id="group3" class="parallax__group">
@@ -195,7 +212,13 @@
 
     <!--Body Scripts-->
     <script src="node_modules\onscreen\dist\on-screen.umd.min.js"></script>
+    <script type="text/javascript">
+        var os = new OnScreen();
 
+        os.on('leave', '#group1', function myCallback(element, event) {
+            console.log('Event from navbar');
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,56 @@
+.flash {
+    -moz-animation: flash 2s ease-out;
+    -moz-animation-iteration-count: 10;
+    -webkit-animation: flash 2s ease-out;
+    -webkit-animation-iteration-count: 10;
+    -ms-animation: flash 2s ease-out;
+    -ms-animation-iteration-count: 10;
+}
+
+@keyframes flash {
+    0% {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+@-webkit-keyframes flash {
+    0% {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+@-moz-keyframes flash {
+    0% {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+@-ms-keyframes flash {
+    0% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: #fbf8b2;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
