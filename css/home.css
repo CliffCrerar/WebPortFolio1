@@ -15,8 +15,8 @@
 }
 
 img {
-    width: auto;
-    max-height: 100%;
+    width: 100%;
+    max-height: auto;
     margin-left: 50%;
     transform: translateX(-50%);
 }
@@ -64,7 +64,7 @@ a.nav-link {
     opacity: 0.6;
     text-decoration-style: none;
     text-decoration-color: white;
-    transition: background-color 1s
+    transition: background-color 1s;
 }
 
 a.nav-link.op {
@@ -74,7 +74,7 @@ a.nav-link.op {
 
 div.navbar>div.row {
     width: 100%;
-    margin: 2%
+    margin: 2%;
 }
 
 div.navbar>div.row:first-child {
@@ -138,12 +138,12 @@ div>h2 {
 h1.display-3 {
     font-family: Indie Flower;
     font-weight: bold;
-    font-size: calc(100px + 1vh)
+    font-size: calc(100px + 1vh);
 }
 
 .htm {
     font-weight: bold;
-    font-size: calc(50px + 1vh)
+    font-size: calc(50px + 1vh);
 }
 
 div.carousel-item {

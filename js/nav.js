@@ -18,20 +18,22 @@ $(document).ready(function() {
                 switch (srcGroup) {
                     case 'group1':
                         $('a.navbar-brand').html('Welcome');
-                        $('a.navbar-brand').css({ "font-family": "Pacifico" });
+                        $('a.navbar-brand').css({ 'font-family': 'Pacifico' });
 
                         break;
                     case 'group2':
                         $('a.navbar-brand').html('Title');
-                        $('a.navbar-brand').css({ "font-family": "Josefin Sans" });
-
+                        $('a.navbar-brand').css({ 'font-family': 'Josefin Sans' });
+                        $('[data-toggle="popover"]').popover('hide');
                         break;
                     case 'group3':
                         $('a.navbar-brand').html('About');
-                        $('a.navbar-brand').css({ "font-family": "Gloria Hallelujah" });
+                        $('a.navbar-brand').css({ 'font-family': 'Gloria Hallelujah' });
                         break;
                     case 'group4':
                         $('a.navbar-brand').html('Portfolio');
+                        $('[data-toggle="popover"]').popover('hide');
+                        $('a.navbar-brand').css({ 'font-family': 'Dancing Script' });
                         break;
                     case 'group5':
                         $('a.navbar-brand').html('Socila');

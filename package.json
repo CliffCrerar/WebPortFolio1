@@ -1045,6 +1045,7 @@
             "resolved": "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.1.tgz",
             "version": "5.1.1"
         },
+        "scroll-to-target": "0.0.8",
         "semver": {
             "integrity": "sha512-WfG/X9+oATh81XtllIo/I8gOiY9EXRdv1cQdyykeXK17YcUW3EXUAi2To4pcH6nZtJPr7ZOpM5OMyWJZm+8Rsg==",
             "resolved": "https://registry.npmjs.org/semver/-/semver-5.4.1.tgz",
