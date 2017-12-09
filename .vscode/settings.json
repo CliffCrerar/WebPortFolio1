@@ -76,5 +76,7 @@
     "eslint.options": {
         "configfile": "/.eslintrc.json"
     },
-    "eslint.run": "onSave"
+    "eslint.run": "onSave",
+    "search-node-modules.useLastFolder": true,
+    "search-node-modules.path": "node_modules"
 }
