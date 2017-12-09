@@ -135,11 +135,21 @@ div>h2 {
 
 /* Group 3 css */
 
+h1.display-3 {
+    font-family: Indie Flower;
+    font-weight: bold;
+    font-size: calc(100px + 1vh)
+}
+
+.htm {
+    font-weight: bold;
+    font-size: calc(50px + 1vh)
+}
+
 div.carousel-item {
     overflow: hidden;
 }
 
 div.carousel-item {
     overflow: hidden;
-    background:
 }

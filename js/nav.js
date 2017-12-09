@@ -28,7 +28,7 @@ $(document).ready(function() {
                         break;
                     case 'group3':
                         $('a.navbar-brand').html('About');
-
+                        $('a.navbar-brand').css({ "font-family": "Gloria Hallelujah" });
                         break;
                     case 'group4':
                         $('a.navbar-brand').html('Portfolio');
