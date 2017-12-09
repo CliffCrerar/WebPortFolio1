@@ -11,7 +11,7 @@
 }
 
 .box1 {
-    border: 5px solid yellow;
+    border: 1px solid rgb(68, 0, 255);
 }
 
 img {
@@ -153,3 +153,72 @@ div.carousel-item {
 div.carousel-item {
     overflow: hidden;
 }
+
+
+/* Group 4 */
+
+#group4>.parallax__layer--back>div {
+    background-color: rgba(221, 221, 221, 0.3);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+}
+
+#carousel2 {
+    position: relative;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 43%;
+}
+
+.row {
+    margin: 0px !important;
+}
+
+c2.carousel-inner {
+    width: calc(100%);
+    overflow: hidden;
+}
+
+.c2.carousel-item {
+    color: white;
+    border: 1px solid red;
+    width: 25%;
+    margin: 0;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.c2.carousel-indicators {
+    position: relative;
+    transform: translateY(45vh)
+}
+
+
+/* ------------------------------------ */
+
+
+/* Group 5 */
+
+.list-group {
+    width: 70%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+/* ------------------------------------ */
+
+
+/* Group 6 */
+
+
+/* ------------------------------------ */

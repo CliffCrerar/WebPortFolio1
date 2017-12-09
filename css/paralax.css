@@ -51,7 +51,7 @@
   }
   /* demo styles
   --------------------------------------------- */
-  
+  /*
   body,
   html {
       overflow: hidden;
@@ -64,7 +64,7 @@
   * {
       margin: 0;
       padding: 0;
-  }
+  }*/
   
   .parallax {
       font-size: 200%;
