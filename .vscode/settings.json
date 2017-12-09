@@ -60,9 +60,7 @@
         "HTML": "HTML5",
         "javascript": "javascript"
     },
-    "vscode-janus-debug.uploadOnSave": [
-        "nav"
-    ],
+    "vscode-janus-debug.uploadOnSave": ["nav"],
     "eslint.packageManager": "npm",
     "eslint.nodePath": "/node_modules/eslint",
     "git.ignoreLimitWarning": true,
@@ -74,5 +72,37 @@
     },
     "eslint.run": "onSave",
     "search-node-modules.useLastFolder": true,
-    "search-node-modules.path": "node_modules"
+    "search-node-modules.path": "node_modules",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    "editor.minimap.enabled": true,
+    "editor.smoothScrolling": true,
+    "editor.minimap.showSlider": "always",
+    "editor.find.autoFindInSelection": true,
+    "editor.parameterHints": true,
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.cursorBlinking": "phase",
+    "editor.codeLens": true,
+    "editor.dragAndDrop": true,
+    "workbench.tips.enabled": true,
+    "workbench.editor.showIcons": true,
+    "workbench.activityBar.visible": true,
+    "files.encoding": "utf8",
+    "files.autoSave": "onWindowChange",
+    "git.enabled": true,
+
+    "al.editorServicesHost": "bin/Microsoft.Dynamics.Nav.EditorServices.Host.exe",
+    "al.enableCodeAnalysis": true,
+    "css.fileExtensions": ["css", "scss"],
+    "liveServer.settings.donotVerifyTags": false,
+    "liveServer.settings.proxy": {
+        "enable": false,
+        "baseUri": "/",
+        "proxyUri": "http://127.0.0.1:8080"
+    }
 }
