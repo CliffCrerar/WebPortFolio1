@@ -62,5 +62,19 @@
     },
     "vscode-janus-debug.uploadOnSave": [
         "nav"
-    ]
+    ],
+    "eslint.packageManager": "npm",
+    "eslint.nodePath": "/node_modules/eslint",
+    "git.ignoreLimitWarning": true,
+    "eslint.trace.server": "verbose",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact"
+    ],
+    "eslint._legacyModuleResolve": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.options": {
+        "configfile": "/.eslintrc.json"
+    },
+    "eslint.run": "onSave"
 }
