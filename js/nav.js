@@ -14,17 +14,21 @@ $(document).ready(function() {
         $('.nav-link').each(function(i) {
             var navGroup = $('a.nav-link').get(i).attributes[1].value.replace('#', '');
             if (srcGroup == navGroup) {
-                console.log('NAV = ' + navGroup + ' SCR: ' + srcGroup);
                 $('a.nav-link').get(i).classList.add('active');
                 switch (srcGroup) {
                     case 'group1':
                         $('a.navbar-brand').html('Welcome');
+                        $('a.navbar-brand').css({ "font-family": "Pacifico" });
+
                         break;
                     case 'group2':
                         $('a.navbar-brand').html('Title');
+                        $('a.navbar-brand').css({ "font-family": "Josefin Sans" });
+
                         break;
                     case 'group3':
                         $('a.navbar-brand').html('About');
+
                         break;
                     case 'group4':
                         $('a.navbar-brand').html('Portfolio');
