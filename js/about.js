@@ -1,6 +1,10 @@
 $(document).ready(function() {
     /* POPOVERS */
 
+    //Carouseld endless_scroll_pluging
+
+    //$('#pf').endlessScroll({ width: '100%', height: '100px', steps: -2, speed: 40, mousestop: true });
+
     //Custom popover data objects
     var PoData = [{
             index: 0,
@@ -9,8 +13,8 @@ $(document).ready(function() {
                 'Lived in Pretoria most of my life',
                 'Went to an afrikaans school in the north',
                 'Played in a band',
-                'Had dreams to to be a rock star'
-            ]
+                'Had dreams to to be a rock star',
+            ],
         },
         {
             index: 1,
@@ -21,8 +25,8 @@ $(document).ready(function() {
                 'Crypto trading',
                 'Web development (obviously)',
                 'Golf is sometimes my game',
-                'Kaizen'
-            ]
+                'Kaizen',
+            ],
         },
         {
             index: 2,
@@ -32,8 +36,8 @@ $(document).ready(function() {
                 'Worked as an asset accountent for many years (boring)',
                 'I then got myself a job as a solutions architect',
                 'Currently employed by AdaptIT',
-                'I strive to design enjoyable experiences'
-            ]
+                'I strive to design enjoyable experiences',
+            ],
         },
         {
             index: 3,
@@ -44,8 +48,8 @@ $(document).ready(function() {
                 'Studying 3rd year Bcom informatics at UNISA',
                 'Also a student at freeCodeCamp',
                 'In the process of completing a front end certificate',
-                'Learning everyday, and will be for the days to come'
-            ]
+                'Learning everyday, and will be for the days to come',
+            ],
         },
     ];
 
@@ -53,14 +57,13 @@ $(document).ready(function() {
 
     //Clicking on the buttons will populate the poppers with the data in object PoData
     $('div.lead>div.row>.col-md-3>a').on('click', function(event) {
-
         //console.log(event.target);
         //console.log(event.target.attributes[10].nodeValue);
         //console.log($('#' + event.target.attributes[11].nodeValue));
         //console.log($('#' + event.target.attributes[10].nodeValue).children()[1].innerHTML);
         //console.log($('#' + event.target.attributes[10].nodeValue).children()[2].innerHTML);
 
-        var i = (event.target.id).split('btn')[1]; //Get object number from button ID
+        var i = event.target.id.split('btn')[1]; //Get object number from button ID
 
         //Assign popper title
         $('#' + event.target.attributes[10].nodeValue).children()[1].innerHTML = event.target.title = PoData[i].title;
@@ -84,6 +87,5 @@ $(document).ready(function() {
             $('#' + event.target.id).removeClass('btn-success');
             $('#' + event.target.id).addClass('btn-primary');
         }
-
     });
 });

@@ -150,10 +150,6 @@ div.carousel-item {
     overflow: hidden;
 }
 
-div.carousel-item {
-    overflow: hidden;
-}
-
 
 /* Group 4 */
 
@@ -168,21 +164,11 @@ div.carousel-item {
     height: 50%;
 }
 
-p.lead {
-    font-size: calc(20px + 1vh);
-}
-
 #carousel2 {
     position: relative;
     width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 43%;
-}
-
-.c2.row {
-    margin: 0px !important;
+    height: 40%;
+    top: 32%;
 }
 
 c2.carousel-inner {
@@ -190,20 +176,25 @@ c2.carousel-inner {
     overflow: hidden;
 }
 
+
+/*
 .c2.carousel-item {
     display: block;
     color: white;
     border: 1px solid red;
-    width: 25%;
+    width: 100%;
     margin: 0;
     height: 40vh;
-    background-color: rgba(0, 0, 0, 0.3)
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 .c2.carousel-indicators {
     position: relative;
-    transform: translateY(45vh)
+    transform: translateY(45vh);
 }
+
+*/
 
 
 /* ------------------------------------ */
@@ -216,7 +207,7 @@ c2.carousel-inner {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 

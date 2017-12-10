@@ -24,6 +24,7 @@
     <script src="js/nav.js"></script>
     <script src="js/flash.js"></script>
     <script src="js/about.js"></script>
+    <script src="js/endless_scroll_min.js"></script>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/paralax.css">
@@ -182,19 +183,18 @@
 
 
                 <!--Carousel 2-->
-                <div id="carousel2" class="carousel slide box1" data-ride="">
+                <div id="carousel2" class="carousel slide box1" data-ride="carousel">
 
                     <ol class="c2 carousel-indicators">
                         <li data-target="#carousel2" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel2" data-slide-to="1"></li>
                         <li data-target="#carousel2" data-slide-to="2"></li>
                         <li data-target="#carousel2" data-slide-to="3"></li>
-                        <li data-target="#carousel2" data-slide-to="4"></li>
                     </ol>
 
-                    <div class="c2 carousel-inner box1 row" role="listbox">
+                    <div id="pf" class="c2 carousel-inner box1" role="listbox">
 
-                        <div class="c2 carousel-item">
+                        <div class="c2 carousel-item active">
                             <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <h3>Title</h3>
@@ -203,7 +203,7 @@
                         </div>
 
                         <div class="c2 carousel-item">
-                            <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide">
+                            <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide active" alt="Second slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <h3>Title</h3>
                                 <p>Description</p>
@@ -219,23 +219,12 @@
                         </div>
 
                         <div class="c2 carousel-item">
-                            <img data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Fourth slide">
+                            <img data-src="holder.js/900x500/auto/#666:#444/text:Fourth slide" alt="Fourth slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <h3>Title</h3>
                                 <p>Description</p>
                             </div>
                         </div>
-
-                        <div class="c2 carousel-item">
-                            <img data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Fith slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Title</h3>
-                                <p>Description</p>
-                            </div>
-                        </div>
-
-
-
 
                     </div>
 
@@ -266,7 +255,7 @@
         <!--Portfoltio-->
 
 
-        <!--Social Media studd-->
+        <!--Social Media stuff-->
         <div id="group5" class="parallax__group">
             <div class="parallax__layer parallax__layer--fore">
                 <div class="title">Foreground Layer</div>
