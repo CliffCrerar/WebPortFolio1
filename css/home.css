@@ -164,25 +164,46 @@ div.carousel-item {
     height: 50%;
 }
 
+.c2.row {
+    margin: 0px;
+}
+
 #carousel2 {
     position: relative;
     width: 100%;
     height: 40%;
-    top: 32%;
+    Right: 0%;
+    top: 50%;
+    transform: translateY(-50%)
 }
 
-c2.carousel-inner {
-    width: calc(100%);
+c2.slideshow {
+    position: relative;
     overflow: hidden;
 }
 
-.c2.carousel-item {
+c2.ss-item:hover {}
+
+.c2.ss-item {
+    display: block;
     color: white;
-    border: 1px solid red;
-    width: 25%;
+    border: 1px solid #ff0000;
+    width: calc(100% /4);
     margin: 0;
-    height: 100%;
+    height: 38vh;
     background-color: rgba(0, 0, 0, 0.3);
+    margin: auto;
+    animation: slideshow 5s linear infinite;
+    -webkit-animation: slideshow 5s linear infinite;
+}
+
+@keyframes slideshow {
+    0% {
+        left: -100%;
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
 }
 
 .c2.carousel-indicators {
@@ -190,7 +211,7 @@ c2.carousel-inner {
     transform: translateY(45vh);
 }
 
-*/
+
 /* ------------------------------------ */
 
 

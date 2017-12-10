@@ -2,8 +2,9 @@ $(document).ready(function() {
     //control the navbar click
     $('nav.navbar').on('click', function(Event) {
         $('a.nav-link.active').removeClass('active');
+
         if (Event.target.className == 'nav-link') {
-            Event.target.classList.add('active');
+            $(this.target).addClass('active');
         }
     });
 
