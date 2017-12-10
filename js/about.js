@@ -1,60 +1,89 @@
 $(document).ready(function() {
     /* POPOVERS */
 
-    $('[data-toggle="popover"]').popover();
-
-    var Po1Data = [{
+    //Custom popover data objects
+    var PoData = [{
             index: 0,
             title: 'Pretoria boy',
-            content: '-Live in Pretoria most of my life \n' +
-                '-Went to an afrikaans school in the north \n' +
-                '-Had dreams wanted to be a rock stor\n',
+            content: [
+                'Lived in Pretoria most of my life',
+                'Went to an afrikaans school in the north',
+                'Played in a band',
+                'Had dreams to to be a rock star'
+            ]
         },
         {
             index: 1,
             title: 'May the force be with you',
-            content: '-All things nerdy and geeky \n' +
-                '-Technology is the future \n' +
-                '-Crypto trading \n' +
-                '-Web development(obviously) \n' +
-                '-Golf is sometimes my game \n' +
-                '-Kaizen',
+            content: [
+                'All things nerdy and geeky',
+                'Technology is the future',
+                'Crypto trading',
+                'Web development (obviously)',
+                'Golf is sometimes my game',
+                'Kaizen'
+            ]
         },
         {
             index: 2,
             title: 'My vocation',
-            content: '-In one word, knowledge worker \n' +
-                '-Worked as an asset accountent for many years(boring) \n' +
-                '-Then got myself a job as a solutions architect \n' +
-                '-Currently employed by AdaptIT \n' +
-                '-I strive to design enjoyable experiences',
+            content: [
+                'In one word; knowledge worker',
+                'Worked as an asset accountent for many years (boring)',
+                'I then got myself a job as a solutions architect',
+                'Currently employed by AdaptIT',
+                'I strive to design enjoyable experiences'
+            ]
         },
         {
             index: 3,
             title: 'I love books',
-            content: '-Early life drop out \n' +
-                '-Currently a part time university student \n' +
-                '-Studying 3rd year Bcom informatics at UNISA \n' +
-                '-Also a student at freeCodeCamp \n' +
-                '-In the process of completing a front end certificate \n' +
-                '-Learning everyday, and will be for the days to come',
+            content: [
+                'Early life drop out',
+                'Currently a part time university student',
+                'Studying 3rd year Bcom informatics at UNISA',
+                'Also a student at freeCodeCamp',
+                'In the process of completing a front end certificate',
+                'Learning everyday, and will be for the days to come'
+            ]
         },
     ];
 
-    var btns = $('div.lead>div.row').children();
-    $('div.lead>div.row').children().each(function(i) {
-        console.log(Po1Data[i]);
-        console.log(btns[i]);
+    $('[data-toggle="popover"]').popover(); //Activate poppers
 
-        btns[i].title = Po1Data[i].title;
-        btns[i].title = Po1Data[i].title;
+    //Clicking on the buttons will populate the poppers with the data in object PoData
+    $('div.lead>div.row>.col-md-3>a').on('click', function(event) {
 
-        //btns[i].removeClass('data-content=""');
+        //console.log(event.target);
+        //console.log(event.target.attributes[10].nodeValue);
+        //console.log($('#' + event.target.attributes[11].nodeValue));
+        //console.log($('#' + event.target.attributes[10].nodeValue).children()[1].innerHTML);
+        //console.log($('#' + event.target.attributes[10].nodeValue).children()[2].innerHTML);
 
-        //var newContent = Po1Data.content;
+        var i = (event.target.id).split('btn')[1]; //Get object number from button ID
 
-        //newContent = '' + newContent;
+        //Assign popper title
+        $('#' + event.target.attributes[10].nodeValue).children()[1].innerHTML = event.target.title = PoData[i].title;
+        var end = PoData[i].content.length; //Get lenth of popper data object
+        var cont = '<ul class="pbodyList">'; //start html element for popper boddy
 
-        console.log(i);
+        //for each item in array append a <li> to cont
+        for (l = 0; l < end; l++) {
+            cont = cont + '<li>' + PoData[i].content[l] + '</li>';
+        }
+        cont = cont + '</ul>';
+        $('#' + event.target.attributes[10].nodeValue).children()[2].innerHTML = cont;
+        event.target.title = 'Click the button again to dismiss';
+
+        //console.log($('#' + event.target.id).hasClass('btn-primary'));
+
+        if ($('#' + event.target.id).hasClass('btn-primary')) {
+            $('#' + event.target.id).removeClass('btn-primary');
+            $('#' + event.target.id).addClass('btn-success');
+        } else if ($('#' + event.target.id).hasClass('btn-success')) {
+            $('#' + event.target.id).removeClass('btn-success');
+            $('#' + event.target.id).addClass('btn-primary');
+        }
+
     });
 });

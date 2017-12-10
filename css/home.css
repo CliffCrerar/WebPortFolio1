@@ -168,6 +168,10 @@ div.carousel-item {
     height: 50%;
 }
 
+p.lead {
+    font-size: calc(20px + 1vh);
+}
+
 #carousel2 {
     position: relative;
     width: 100%;
@@ -177,7 +181,7 @@ div.carousel-item {
     height: 43%;
 }
 
-.row {
+.c2.row {
     margin: 0px !important;
 }
 
@@ -187,6 +191,7 @@ c2.carousel-inner {
 }
 
 .c2.carousel-item {
+    display: block;
     color: white;
     border: 1px solid red;
     width: 25%;

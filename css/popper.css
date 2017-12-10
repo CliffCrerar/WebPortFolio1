@@ -1,0 +1,9 @@
+/* Additional CSS for poppers in the about section */
+
+ul.pbodyList {
+    padding: 5% 0% 5% 10%
+}
+
+ul.pbodyList>li {
+    margin: 5% 0% 5% 0%
+}

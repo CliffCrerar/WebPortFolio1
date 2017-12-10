@@ -19,7 +19,6 @@ $(document).ready(function() {
                     case 'group1':
                         $('a.navbar-brand').html('Welcome');
                         $('a.navbar-brand').css({ 'font-family': 'Pacifico' });
-
                         break;
                     case 'group2':
                         $('a.navbar-brand').html('Title');
