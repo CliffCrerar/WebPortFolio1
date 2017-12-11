@@ -1093,6 +1093,7 @@
             "resolved": "https://registry.npmjs.org/slice-ansi/-/slice-ansi-1.0.0.tgz",
             "version": "1.0.0"
         },
+        "smooth-scrolling": "^2.3.9",
         "sprintf-js": {
             "integrity": "sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=",
             "resolved": "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz",

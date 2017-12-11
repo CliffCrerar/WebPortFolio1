@@ -2,7 +2,6 @@ $(document).ready(function() {
     //control the navbar click
     $('nav.navbar').on('click', function(Event) {
         $('a.nav-link.active').removeClass('active');
-
         if (Event.target.className == 'nav-link') {
             $(this.target).addClass('active');
         }
@@ -13,7 +12,8 @@ $(document).ready(function() {
         $('a.nav-link.active').removeClass('active');
         var srcGroup = Event.currentTarget.id;
         $('.nav-link').each(function(i) {
-            var navGroup = $('a.nav-link').get(i).attributes[1].value.replace('#', '');
+            //var navGroup = $('a.nav-link').get(i).attributes[1].value.replace('#', '');
+            var navGroup = $('a.nav-link').get(i).id.replace('a', '');
             if (srcGroup == navGroup) {
                 $('a.nav-link').get(i).classList.add('active');
                 switch (srcGroup) {

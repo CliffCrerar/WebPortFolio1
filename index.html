@@ -8,49 +8,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
 
+    <!--Local CSS files-->
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/flash.css">
     <link rel="stylesheet" href="css/popper.css">
-    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/paralax.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="node_modules\jquery\dist\jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!--local script files-->
     <script src="js/home.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/flash.js"></script>
     <script src="js/about.js"></script>
     <script src="js/endless_scroll_min.js"></script>
     <script src="js/endlessRoll.js"></script>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/paralax.css">
+    <script src="js/g4msg.js"></script>
+    <script src="js/smScr.js"></script>
     <!--Googel fonts-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Indie+Flower|Josefin+Sans|Lobster|Pacifico|Shadows+Into+Light" rel="stylesheet">
 </head>
 
-<body>
+<body class='smooth'>
 
     <nav class="navbar navbar-dark fixed-top container-fluid">
         <a class="navbar-brand" href="#">Welcome</a>
         <a class="nav-link op" href="#">|</a>
-        <!--group1--><a class="nav-link active" href="#group1">Home</a>
+        <!--group1--><a id="group1a" class="nav-link active" href="#">Home</a>
         <a class="nav-link op" href="#">|</a>
-        <!--group2--><a class="nav-link" href="#group2">Title</a>
+        <!--group2--><a id="group2a" class="nav-link" href="#">Title</a>
         <a class="nav-link op" href="#">|</a>
-        <!--group3--><a class="nav-link" href="#group3">About</a>
+        <!--group3--><a id="group3a" class="nav-link" href="#">About</a>
         <a class="nav-link op" href="#">|</a>
-        <!--group4--><a class="nav-link" href="#group4">Portfolio</a>
+        <!--group4--><a id="group4a" class="nav-link" href="#">Portfolio</a>
         <a class="nav-link op" href="#">|</a>
-        <!--group5--><a class="nav-link" href="#group5">Social Accounts</a>
+        <!--group5--><a id="group5a" class="nav-link" href="#">Social Accounts</a>
         <a class="nav-link op" href="#">|</a>
-        <!--group6--><a class="nav-link" href="#group6">Email me</a>
+        <!--group6--><a id="group6a" class="nav-link" href="#">Email me</a>
         <a class="nav-link op" href="#">|</a>
-        <!--group7--><a class="nav-link" href="#group7">Thanks</a>
+        <!--group7--><a id="group7a" class="nav-link" href="#">Thanks</a>
     </nav>
 
     <!--Scroll instruction-->
@@ -329,7 +332,9 @@
             </div>
 
             <div class="parallax__layer parallax__layer--back">
-                <div class="">Portfolio of web sites</div>
+                <div>
+                    <h4 class="g4msg"></h4>
+                </div>
             </div>
 
             <div class="parallax__layer parallax__layer--deep">
@@ -409,15 +414,7 @@
     <!--Parallax framework-->
 
     <!--Body Scripts-->
-    <script src="node_modules/scroll-to-target/index.js"></script>
-    <script src="node_modules\onscreen\dist\on-screen.umd.min.js"></script>
-    <script type="text/javascript">
-        var os = new OnScreen();
 
-        os.on('leave', '#group1', function myCallback(element, event) {
-            console.log('Event from navbar');
-        });
-    </script>
 </body>
 
 </html>

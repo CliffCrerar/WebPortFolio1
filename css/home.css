@@ -4,11 +4,11 @@
     --navgrow: 1;
     --nabrandSize: calc(35px + 0.2vw);
     --g2titleborder: silver;
-    --cardBorderRadius: calc(.25rem + 24px)
+    --cardBorderRadius: calc(.25rem + 24px);
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    /*display: none;*/
 }
 
 .box1 {
@@ -165,6 +165,14 @@ div.carousel-item {
     height: 50%;
 }
 
+.g4msg {
+    text-align: center;
+    border: 1px solid black;
+    width: 30%;
+    margin: auto;
+    border-radius: calc(10px + 1vh);
+}
+
 .c2.row {
     margin: 0px;
 }
@@ -175,7 +183,7 @@ div.carousel-item {
     height: 40%;
     left: 0%;
     top: 53%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
 }
 
 c2.slideshow {
