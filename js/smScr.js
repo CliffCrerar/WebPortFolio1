@@ -1,16 +1,5 @@
 $(document).ready(function() {
     // Add smooth scrolling to all links
-
-    $('a.nav-link').on('click', function(e) {
-        e.preventDefault();
-        console.log('Click');
-        if (this.id !== '') {
-            console.log('HasID');
-            var id = '#' + this.id.replace('a', '');
-            $('html, body').animate({ scrollTop: $(id).offset().top }, 500);
-        } // End if
-    });
-
     /*
     $('a').on('click', function(event) {
       // Make sure this.hash has a value before overriding default behavior
