@@ -170,45 +170,35 @@ div.carousel-item {
 
 #carousel2 {
     position: relative;
-    width: 100%;
+    width: 300%;
     height: 40%;
-    Right: 0%;
+    left: 0%;
     top: 50%;
     transform: translateY(-50%)
 }
 
 c2.slideshow {
-    position: relative;
     overflow: hidden;
 }
-
-c2.ss-item:hover {}
 
 .c2.ss-item {
     display: block;
     color: white;
-    border: 1px solid #ff0000;
-    width: calc(100% /4);
+    border: 1px solid hsl(0, 100%, 50%);
+    width: calc(100%/3);
     margin: 0;
     height: 38vh;
     background-color: rgba(0, 0, 0, 0.3);
     margin: auto;
-    animation: slideshow 5s linear infinite;
-    -webkit-animation: slideshow 5s linear infinite;
+    animation: slideshow 10s linear infinite;
+    -webkit-animation: slideshow 10s linear infinite;
+    transform: translate3d(0, 0, 0);
 }
 
 @keyframes slideshow {
-    0% {
-        left: -100%;
-    }
     100% {
-        -webkit-transform: translateX(-100%);
+        /* -webkit-transform: translateX(-200%);*/
     }
-}
-
-.c2.carousel-indicators {
-    position: relative;
-    transform: translateY(45vh);
 }
 
 
