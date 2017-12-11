@@ -13,7 +13,7 @@ $(document).ready(function() {
                 'Lived in Pretoria most of my life',
                 'Went to an afrikaans school in the north',
                 'Played in a band',
-                'Had dreams to to be a rock star',
+                'Had dreams to to be a rock star'
             ],
         },
         {
@@ -25,7 +25,8 @@ $(document).ready(function() {
                 'Crypto trading',
                 'Web development (obviously)',
                 'Golf is sometimes my game',
-                'Kaizen',
+                'Atronomy',
+                'Kaizen'
             ],
         },
         {
@@ -36,7 +37,7 @@ $(document).ready(function() {
                 'Worked as an asset accountent for many years (boring)',
                 'I then got myself a job as a solutions architect',
                 'Currently employed by AdaptIT',
-                'I strive to design enjoyable experiences',
+                'I strive to design enjoyable experiences'
             ],
         },
         {
@@ -48,7 +49,7 @@ $(document).ready(function() {
                 'Studying 3rd year Bcom informatics at UNISA',
                 'Also a student at freeCodeCamp',
                 'In the process of completing a front end certificate',
-                'Learning everyday, and will be for the days to come',
+                'Learning everyday, and will be for the days to come'
             ],
         },
     ];
