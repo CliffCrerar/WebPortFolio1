@@ -165,14 +165,6 @@ div.carousel-item {
     height: 50%;
 }
 
-.g4msg {
-    text-align: center;
-    border: 1px solid black;
-    width: 30%;
-    margin: auto;
-    border-radius: calc(10px + 1vh);
-}
-
 .c2.row {
     margin: 0px;
 }
@@ -182,7 +174,7 @@ div.carousel-item {
     width: 300%;
     height: 50%;
     left: 0%;
-    top: 53%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -195,7 +187,7 @@ c2.slideshow {
     color: white;
     width: calc(100%/3);
     margin: 0;
-    height: 38vh;
+    height: 50%;
     /*background-color: rgba(0, 0, 0, 0.3);*/
     margin: auto;
     animation: slideshow 25s linear infinite;
@@ -209,16 +201,23 @@ c2.slideshow {
     }
 }
 
+div.c2.ss-item.container-fluid>div.row {
+    position: absolute;
+    width: 100%;
+    top: 5vh;
+}
+
 .pr1.col-md-3 {
     width: 30%;
-    height: 50vh;
-    max-height: 50%vh;
+    height: 40vh;
+    max-height: 100%;
 }
 
 .card {
     max-width: 100%;
     height: 100%;
     margin: auto;
+    border-width: 0px !important;
     border-top-left-radius: var(--cardBorderRadius) !important;
     border-top-right-radius: var(--cardBorderRadius) !important;
     border-bottom-left-radius: var(--cardBorderRadius) !important;
@@ -226,14 +225,15 @@ c2.slideshow {
 }
 
 .card-img-top {
-    height: 60%;
+    height: 50%;
+    border-width: 0px;
     background-color: grey;
     border-top-left-radius: var(--cardBorderRadius) !important;
     border-top-right-radius: var(--cardBorderRadius) !important;
 }
 
 .card-body {
-    height: 40%;
+    height: 50%;
     overflow: scroll;
     border-bottom-left-radius: var(--cardBorderRadius) !important;
     border-bottom-right-radius: var(--cardBorderRadius) !important;
@@ -242,6 +242,13 @@ c2.slideshow {
 .card-text {
     color: black;
     font-size: calc(10px + 0.5vw);
+}
+
+div.card-bottom>input {
+    width: 100%;
+    color: black;
+    border-bottom-left-radius: var(--cardBorderRadius) !important;
+    border-bottom-right-radius: var(--cardBorderRadius) !important;
 }
 
 
