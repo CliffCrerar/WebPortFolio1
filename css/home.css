@@ -5,6 +5,7 @@
     --nabrandSize: calc(35px + 0.2vw);
     --g2titleborder: silver;
     --cardBorderRadius: calc(.25rem + 24px);
+    --cardBorderRadiusB: calc(.25rem + 24px);
 }
 
 ::-webkit-scrollbar {
@@ -244,11 +245,22 @@ div.c2.ss-item.container-fluid>div.row {
     font-size: calc(10px + 0.5vw);
 }
 
-div.card-bottom>input {
+div.card-bottom {
+    height: 16%;
+}
+
+div.card-bottom>a {
     width: 100%;
-    color: black;
-    border-bottom-left-radius: var(--cardBorderRadius) !important;
-    border-bottom-right-radius: var(--cardBorderRadius) !important;
+    border-style: none;
+    color: blue !important;
+    border-bottom-left-radius: var(--cardBorderRadiusB) !important;
+    border-bottom-right-radius: var(--cardBorderRadiusB) !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+div.card-bottom>a:hover {
+    color: white !important;
 }
 
 
