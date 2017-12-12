@@ -9,6 +9,15 @@ $(document).ready(function() {
 
     //Change the navbar according to section in view
     $('.parallax__group').mouseenter(function(Event) {
+        var currGroup = Event.currentTarget.id;
+        console.log(currGroup);
+        setTimeout(function() {
+            document.getElementById(currGroup).scrollIntoView({
+                block: 'start',
+                behavior: 'smooth',
+            });
+        }, 1000);
+
         $('a.nav-link.active').removeClass('active');
         var srcGroup = Event.currentTarget.id;
         $('.nav-link').each(function(i) {

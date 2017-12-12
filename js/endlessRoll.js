@@ -1,14 +1,18 @@
 $(document).ready(function() {
-    var run1time = 0;
     setTimeout(function() {
         $('#carousel2').mouseenter(function() {
-            $('div.c2.ss-item').css({ "animation-play-state": "Paused" });
+            $('div.c2.ss-item').css({ 'animation-play-state': 'Paused' });
         });
 
         $('#carousel2').mouseleave(function() {
-            $('div.c2.ss-item').css({ "animation-play-state": "Running" });
+            $('div.c2.ss-item').css({ 'animation-play-state': 'Running' });
         });
     }, 11000);
+    /*
+    $('div.c2.ss-item').css({ 'animation-play-state': 'Paused' });
+    $('div.card').hide();
+    
+    var run1time = 0;
 
     $('#group4').mouseenter(function() {
         if (run1time == 0) {
@@ -21,14 +25,14 @@ $(document).ready(function() {
                     setTimeout(function() {
                         cardDiv.fadeIn(3000);
                         if (i == 4) {
-                            $('div.c2.ss-item').css({ "animation-play-state": "Running" });
+                            $('div.c2.ss-item').css({ 'animation-play-state': 'Running' });
                         }
                     }, timeout);
                 });
             }, 2000);
         }
         run1time = 1;
-    });
+    });*/
 });
 /*
 animation: slideshow 10s linear infinite;

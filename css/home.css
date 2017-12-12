@@ -8,7 +8,7 @@
 }
 
 ::-webkit-scrollbar {
-    /*display: none;*/
+    display: none;
 }
 
 .box1 {
@@ -180,7 +180,7 @@ div.carousel-item {
 #carousel2 {
     position: relative;
     width: 300%;
-    height: 40%;
+    height: 50%;
     left: 0%;
     top: 53%;
     transform: translateY(-50%);
@@ -211,8 +211,8 @@ c2.slideshow {
 
 .pr1.col-md-3 {
     width: 30%;
-    height: 38vh;
-    max-height: 38vh;
+    height: 50vh;
+    max-height: 50%vh;
 }
 
 .card {
@@ -234,7 +234,7 @@ c2.slideshow {
 
 .card-body {
     height: 40%;
-    overflow: hidden;
+    overflow: scroll;
     border-bottom-left-radius: var(--cardBorderRadius) !important;
     border-bottom-right-radius: var(--cardBorderRadius) !important;
 }
@@ -251,11 +251,23 @@ c2.slideshow {
 /* Group 5 */
 
 .list-group {
-    width: 70%;
+    width: calc(70% - 30vw);
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+h5.mb-1 {
+    font-size: 15px !important;
+}
+
+p.mb-1 {
+    font-size: 20px !important;
+}
+
+small {
+    font-size: 15px !important;
 }
 
 
