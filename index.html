@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/paralax.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/sbAniSbb.css">
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -22,6 +23,7 @@
     <script src="node_modules\jquery\dist\jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 
     <!--local script files-->
     <script src="js/home.js"></script>
@@ -32,6 +34,8 @@
     <script src="js/endlessRoll.js"></script>
     <script src="js/portfolio.js"></script>
     <script src="js/smScr.js"></script>
+    <script src="js/datePicker.js"></script>
+
 
     <!--Googel fonts-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Indie+Flower|Josefin+Sans|Lobster|Pacifico|Shadows+Into+Light" rel="stylesheet">
@@ -42,19 +46,26 @@
     <nav class="navbar navbar-dark fixed-top container-fluid">
         <a class="navbar-brand" href="#">Welcome</a>
         <a class="nav-link op" href="#">|</a>
-        <!--group1--><a id="group1a" class="nav-link active" href="#group1">Home</a>
+        <!--group1-->
+        <a id="group1a" class="nav-link active" href="#group1">Home</a>
         <a class="nav-link op" href="#">|</a>
-        <!--group2--><a id="group2a" class="nav-link" href="#group2">Title</a>
+        <!--group2-->
+        <a id="group2a" class="nav-link" href="#group2">Title</a>
         <a class="nav-link op" href="#">|</a>
-        <!--group3--><a id="group3a" class="nav-link" href="#group3">About</a>
+        <!--group3-->
+        <a id="group3a" class="nav-link" href="#group3">About</a>
         <a class="nav-link op" href="#">|</a>
-        <!--group4--><a id="group4a" class="nav-link" href="#group4">Portfolio</a>
+        <!--group4-->
+        <a id="group4a" class="nav-link" href="#group4">Portfolio</a>
         <a class="nav-link op" href="#">|</a>
-        <!--group5--><a id="group5a" class="nav-link" href="#group5">Social Accounts</a>
+        <!--group5-->
+        <a id="group5a" class="nav-link" href="#group5">Social Accounts</a>
         <a class="nav-link op" href="#">|</a>
-        <!--group6--><a id="group6a" class="nav-link" href="#group6">Email me</a>
+        <!--group6-->
+        <a id="group6a" class="nav-link" href="#group6">Email me</a>
         <a class="nav-link op" href="#">|</a>
-        <!--group7--><a id="group7a" class="nav-link" href="#group7">Thanks</a>
+        <!--group7-->
+        <a id="group7a" class="nav-link" href="#group7">Thanks</a>
     </nav>
 
     <!--Scroll instruction-->
@@ -64,7 +75,7 @@
         </div>
         <div class="row">
             <span id="scrlprompt" class="fa fa-chevron-circle-down" aria-hidden="true" style="color: transparent">
-            </span>
+                </span>
         </div>
     </div>
     <!--Scroll instruction-->
@@ -263,7 +274,7 @@
                                             <p class="card-text"></p>
                                         </div>
                                         <div class="card-bottom">
-                                            <a class="btn btn-outline-success" value="CLICK TO VIEW" data-toggle="tooltip" data-placement="bottom" title="This button will take you to the site">CLICK TO VIEW</a>
+                                            <a class="btn btn-outline-success" value="CLICK TO VIEW" data-toggle="tooltip" data-placement="bottom" title="This button will take you to the site" disabled>CLICK TO VIEW</a>
                                         </div>
                                     </div>
                                 </div>
@@ -393,42 +404,49 @@
 
 
                 <div class="list-group">
-
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                    <!--Faceboock-->
+                    <a href="https://www.facebook.com/cliff.crerar" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start active">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Heading</h5>
+                            <h5 class="mb-1">facebook</h5>
                             <span class="fa fa-facebook"></span>
                         </div>
-                        <p class="mb-1">Paragraph</p>
+                        <p class="mb-1">Cliff Crerar</p>
                         <small>paragraph footer</small>
                     </a>
+                    <!--Faceboock-->
 
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <!--LinkedIn-->
+                    <a href="https://www.linkedin.com/in/clifford-crerar-899b3933/" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Heading</h5>
-                            <span class="fa fa-twitter"></span>
+                            <h5 class="mb-1">LinkedIn</h5>
+                            <span class="fa fa-linkedin"></span>
                         </div>
-                        <p class="mb-1">Paragraph</p>
+                        <p class="mb-1">Clifford Crerar</p>
                         <small>paragraph footer</small>
                     </a>
+                    <!--LinkedIn-->
 
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start disabled">
+                    <!--GitHub-->
+                    <a href="https://github.com/CliffCrerar" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Heading</h5>
-                            <span class="fa fa-github"></span>
+                            <h5 class="mb-1">GitHub</h5>
+                            <span class="fa fa-github-alt"></span>
                         </div>
-                        <p class="mb-1">Paragraph</p>
+                        <p class="mb-1">CliffCrerar</p>
                         <small>paragraph footer</small>
                     </a>
+                    <!--GitHub-->
 
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start disabled">
+                    <!--FreeCodeCamp-->
+                    <a href="https://www.freecodecamp.org/cliffcrerar" class="list-group-item list-group-item-action flex-column align-items-start">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Heading</h5>
+                            <h5 class="mb-1">freeCodeCamp</h5>
                             <span class="fa fa-free-code-camp"></span>
                         </div>
-                        <p class="mb-1">Paragraph</p>
+                        <p class="mb-1">cliffcrerar</p>
                         <small>paragraph footer</small>
                     </a>
+                    <!--FreeCodeCamp-->
 
                 </div>
 
@@ -448,24 +466,84 @@
 
             <div class="parallax__layer parallax__layer--base">
                 <div class="title">Base Layer</div>
+                <div class="email-Form box1">
+
+                    <form class="box1 container">
+
+                        <h1 class="row">Please send me an email:</h1>
+
+                        <div class="form-group row">
+                            <div class="col input-group">
+                                <div class="input-group-addon">Name</div>
+                                <input type="text" class="form-control" name="inputName" id="fName" placeholder="First Name">
+                            </div>
+                            <div class="col input-group">
+                                <div class="input-group-addon">Surname</div>
+                                <input type="text" class="form-control" name="inputName" id="lName" placeholder="Last Name">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+
+                            <div class="col-sm-12 col input-group">
+                                <div class="input-group-addon">
+                                    <span class="fa fa-envelope"></span>
+                                </div>
+                                <input type="email" class="form-control " name="inputName" id="inputName" placeholder="e-mail address">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col input-group">
+                                <div class="input-group-addon">Name</div>
+                                <input type="text" class="form-control" name="inputName" id="fName" placeholder="First Name">
+                            </div>
+                            <div class="col input-group">
+                                <div class="input-group-addon">Surname</div>
+                                <select type="datetime" class="form-control" name="inputName" id="lName" placeholder="Last Name">
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Collapsible Group Item #1
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                        </form>
+
+                    </div>
+                </div>
+
             </div>
+            <!--Email-->
+
+            <!--Thank you-->
+            <div id="group7" class="parallax__group">
+                <div class="parallax__layer parallax__layer--base">
+                    <div class="title">Base Layer</div>
+                </div>
+            </div>
+            <!--Thank you-->
 
         </div>
-        <!--Email-->
+        <!--Parallax framework-->
 
-        <!--Thank you-->
-        <div id="group7" class="parallax__group">
-            <div class="parallax__layer parallax__layer--base">
-                <div class="title">Base Layer</div>
-            </div>
-        </div>
-        <!--Thank you-->
+        <!--Body Scripts-->
 
-    </div>
-    <!--Parallax framework-->
-
-    <!--Body Scripts-->
-
-</body>
+    </body>
 
 </html>

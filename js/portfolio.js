@@ -1,7 +1,9 @@
 $(document).ready(function() {
-    $('div.card-bottom>input.btn').tooltip({ delay: { show: 1000, hide: 500 } });
+    $('div.card-bottom>a').tooltip({ delay: { show: 1000, hide: 500 } });
 
-    $('div.card-bottom>input').on('click', function(event) {});
+    $('.card').hover(function() {
+        $('body').addClass('preventScroll');
+    });
 
     var CardData = {
         card1: {
@@ -60,11 +62,14 @@ $(document).ready(function() {
             card = CardData['card' + (i + 1)];
         }
 
-        if (card.link !== 'F') {
-            $('div#card' + (i + 1) + '>img.card-img-top').attr('src', card.img);
-            $('div#card' + (i + 1) + '>div.card-body>p.card-text').html(card.text);
+        $('div#card' + (i + 1) + '>img.card-img-top').attr('src', card.img);
+        $('div#card' + (i + 1) + '>div.card-body>p.card-text').html(card.text);
+
+        if (card.link !== 'f') {
             $('div#card' + (i + 1) + '>div.card-bottom>a').attr('href', card.link);
             $('div#card' + (i + 1) + '>div.card-bottom>a').attr('target', '_blank');
+        } else {
+            $('div#card' + (i + 1) + '>div.card-bottom>a').addClass('disabled', true);
         }
     });
 });
