@@ -215,7 +215,7 @@ div.c2.ss-item.container-fluid>div.row {
     max-height: 100%;
 }
 
-.card {
+div.card.pf {
     max-width: 100%;
     height: 100%;
     margin: auto;
@@ -317,4 +317,12 @@ small {
     min-width: 320px;
     max-width: 50%;
     transform-style: initial;
+}
+
+div.card.tel {
+    font-size: initial;
+}
+
+h5.mb-0>a {
+    text-decoration-color: none !important;
 }
