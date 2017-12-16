@@ -100,8 +100,6 @@
             "jshint.excludePath": null,
             "css.lint.argumentsInColorFunction": "warning",
             "css.validate": true,
-            "css.lint.idSelector": "warning",
-            "css.lint.important": "warning",
             "scss.lint.float": "warning",
             "vscode_custom_css.imports": [],
             "cssModules.camelCase": true,
