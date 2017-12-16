@@ -324,7 +324,7 @@ div.card.tel {
 h5.mb-0>a {
     text-decoration: none;
     text-decoration-line: none;
-    text-decoration-style: none;
+    text-decoration-style: solid;
     text-decoration-color: black;
     -moz-text-decoration-color: black;
     -moz-text-decoration-style: none;
