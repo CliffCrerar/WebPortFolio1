@@ -11,10 +11,137 @@
         "html.suggest.angular1": true,
         "html.suggest.ionic": true,
         "html.autoClosingTags": true,
-        "html.trace.server": "verbose",
+        "html.trace.server": "messages",
         "editor.tabCompletion": true,
         "liveServer.settings.root": "/",
         "liveServer.settings.port": 5500,
         "liveServer.settings.host": "127.0.0.1",
+        "html.format.endWithNewline": true,
+        "html.format.indentHandlebars": true,
+        "html.format.wrapAttributes": "auto",
+        "html.validate.scripts": true,
+        "html.validate.styles": true,
+        "jshint.excludePath": null,
+        "css.lint.argumentsInColorFunction": "warning",
+        "css.validate": true,
+        "css.lint.idSelector": "ignore",
+        "css.lint.important": "ignore",
+        "scss.lint.float": "warning",
+        "vscode_custom_css.imports": [],
+        "cssModules.camelCase": true,
+        "prettier.cssEnable": [
+            "css",
+            "less",
+            "scss"
+        ],
+        "css-auto-prefix.prefixes": {
+            "transform": [
+                "webkit",
+                "moz",
+                "ms",
+                "o"
+            ],
+            "transition": [
+                "webkit",
+                "moz",
+                "ms",
+                "o"
+            ],
+            "border-radius": [
+                "webkit",
+                "moz",
+                "ms",
+                "o"
+            ],
+            "animation": [
+                "webkit"
+            ],
+            "box-reflect": [
+                "webkit"
+            ],
+            "filter": [
+                "webkit"
+            ],
+            "font-feature-settings": [
+                "webkit",
+                "moz"
+            ],
+            "backface-visibility": [
+                "webkit"
+            ],
+            "box-decoration-break": [
+                "webkit"
+            ],
+            "hyphens": [
+                "webkit",
+                "moz",
+                "ms"
+            ],
+            "marquee-direction": [
+                "webkit"
+            ],
+            "marquee-play-count": [
+                "webkit"
+            ],
+            "marquee-speed": [
+                "webkit"
+            ],
+            "marquee-style": [
+                "webkit"
+            ],
+            "text-combine-upright": [
+                "webkit",
+                "moz",
+                "ms"
+            ],
+            "text-decoration-color": [
+                "moz"
+            ],
+            "text-decoration-line": [
+                "moz"
+            ],
+            "text-decoration-style": [
+                "moz"
+            ],
+            "text-orientation": [
+                "webkit"
+            ],
+            "writing-mode": [
+                "webkit",
+                "ms"
+            ]
+        },
+        "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+        "files.autoSave": "onWindowChange",
+        "editor.multiCursorModifier": "alt",
+        "debug.allowBreakpointsEverywhere": true,
+        "debug.showInStatusBar": "always",
+        "debug.openExplorerOnEnd": true,
+        "debug.openDebug": "openOnSessionStart",
+        "debug.internalConsoleOptions": "openOnSessionStart",
+        "eslint.nodePath": null,
+        "eslint.autoFixOnSave": true,
+        "eslint.validate": [
+            "javascript",
+            "javascriptreact"
+        ],
+        "[javascript]": {
+            "editor.quickSuggestions": {
+                "other": true,
+                "comments": true,
+                "strings": true
+            }
+        },
+        "[json]": {
+            "editor.quickSuggestions": {
+                "strings": true
+            }
+        },
+        "search-node-modules.path": "node_modules",
+        "npm.bin": "npm",
+        "npm.includeDirectories": [
+            "/node_modules",
+            "."
+        ],
     }
 }

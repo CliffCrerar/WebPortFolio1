@@ -20,7 +20,6 @@ img.vp {
     width: 100%;
     max-height: auto;
     margin-left: 50%;
-    transform: translateX(-50%);
 }
 
 
@@ -323,6 +322,6 @@ div.card.tel {
     font-size: initial;
 }
 
-h5.mb-0>a {
+h5.mb-0>h5 {
     text-decoration-color: none !important;
 }

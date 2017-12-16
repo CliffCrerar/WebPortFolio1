@@ -11,12 +11,14 @@ $(document).ready(function() {
     $('.parallax__group').mouseenter(function(Event) {
         var currGroup = Event.currentTarget.id;
 
+        /*
         setTimeout(function() {
             document.getElementById(currGroup).scrollIntoView({
                 block: 'start',
                 behavior: 'smooth',
             });
         }, 1000);
+        */
 
         $('a.nav-link.active').removeClass('active');
         var srcGroup = Event.currentTarget.id;
