@@ -8,6 +8,7 @@
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
+
         },
         "sourceType": "module"
     },
@@ -18,6 +19,8 @@
         "no-unreachable": "warn",
         "no-unused-vars": "warn",
         "constructor-super": "warn",
-        "valid-typeof": "warn"
+        "valid-typeof": "warn",
+        "one-var-declaration-per-line": "warn",
+        "accessor-pairs": "warn"
     }
 }

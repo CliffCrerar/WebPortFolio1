@@ -27,4 +27,5 @@ $(document).ready(function() {
         imgElement[i].height = vph;
         imgElement[i].width = vpw;
     });
+
 });

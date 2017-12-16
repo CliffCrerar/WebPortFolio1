@@ -321,6 +321,20 @@ div.card.tel {
     font-size: initial;
 }
 
-h5.mb-0 {
-    text-decoration-color: none !important;
+h5.mb-0>a {
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: none;
+    text-decoration-color: black;
+    -moz-text-decoration-color: black;
+    -moz-text-decoration-style: none;
+    -moz-text-decoration-line: none;
+}
+
+.fleft {
+    float: left !important;
+}
+
+.fright {
+    float: right !important;
 }
