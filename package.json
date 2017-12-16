@@ -1,35 +1,35 @@
 {
-  "requires": true,
-  "lockfileVersion": 1,
-  "dependencies": {
-    "eslint": "^4.13.1",
-    "html-validator": "^2.2.3",
-    "jquery": "^3.2.1",
-    "jquery-animate-scroll": "^1.0.0",
-    "node.js": "0.0.0",
-    "onscreen": "^1.3.2",
-    "rollup": "^0.52.2",
-    "scroll-to-target": "0.0.8",
-    "smooth-scrolling": "^2.3.9"
-  },
-  "name": "webportfolio1",
-  "version": "1.0.0",
-  "description": "My web portfolio",
-  "main": "index.html",
-  "devDependencies": {
-    "jshint": "^2.9.5"
-  },
-  "scripts": {
-    "test": "ho"
-  },
-  "repository": {
-    "type": "git",
-    "url": "yes"
-  },
-  "keywords": [
-    "git",
-    "wb"
-  ],
-  "author": "Cliff",
-  "license": "Unlicense"
+    "requires": true,
+    "lockfileVersion": 1,
+    "dependencies": {
+        "eslint": "^4.13.1",
+        "html-validator": "^2.2.3",
+        "jquery": "^3.2.1",
+        "jquery-animate-scroll": "^1.0.0",
+        "node.js": "0.0.0",
+        "onscreen": "^1.3.2",
+        "rollup": "^0.52.2",
+        "scroll-to-target": "0.0.8",
+        "smooth-scrolling": "^2.3.9"
+    },
+    "name": "webportfolio1",
+    "version": "1.0.0",
+    "description": "My web portfolio",
+    "main": "index.html",
+    "devDependencies": {
+        "jshint": "^2.9.5"
+    },
+    "scripts": {
+        "test": "ho"
+    },
+    "repository": {
+        "type": "github",
+        "url": "https://github.com/CliffCrerar/WebPortFolio1.git"
+    },
+    "keywords": [
+        "git",
+        "wb"
+    ],
+    "author": "Cliff",
+    "license": "Unlicense"
 }
