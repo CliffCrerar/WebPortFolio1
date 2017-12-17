@@ -17,18 +17,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/sbAniSbb.css">
 
-    <script>
-        window.onload = function() {
-            import $ from 'jquery';
-            let sass = require('sass');
-            let home = require('js/home')
-        }
-    </script>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
-
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 
 
     <!--local script files-->
@@ -41,11 +32,12 @@
     <script src="js/portfolio.js"></script>
     <script src="js/smScr.js"></script>
     <script src="js/collapseToggle.js"></script>
-
-
+    <script src="js/social.js"></script>
 
     <!--Googel fonts-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Indie+Flower|Josefin+Sans|Lobster|Pacifico|Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Krona+One|Poiret+One|Rubik+Mono+One|Shrikhand" rel="stylesheet">
+
 </head>
 
 <body class="smooth">
@@ -412,7 +404,7 @@
 
                 <div class="list-group">
                     <!--Faceboock-->
-                    <a href="https://www.facebook.com/cliff.crerar" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start active">
+                    <a href="https://www.facebook.com/cliff.crerar" id="lgi1" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">facebook</h5>
                             <span class="fa fa-facebook"></span>
@@ -423,7 +415,7 @@
                     <!--Faceboock-->
 
                     <!--LinkedIn-->
-                    <a href="https://www.linkedin.com/in/clifford-crerar-899b3933/" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <a href="https://www.linkedin.com/in/clifford-crerar-899b3933/" id="lgi2" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">LinkedIn</h5>
                             <span class="fa fa-linkedin"></span>
@@ -434,7 +426,7 @@
                     <!--LinkedIn-->
 
                     <!--GitHub-->
-                    <a href="https://github.com/CliffCrerar" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <a href="https://github.com/CliffCrerar" id="lgi3" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">GitHub</h5>
                             <span class="fa fa-github-alt"></span>
@@ -445,7 +437,7 @@
                     <!--GitHub-->
 
                     <!--FreeCodeCamp-->
-                    <a href="https://www.freecodecamp.org/cliffcrerar" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <a href="https://www.freecodecamp.org/cliffcrerar" id="lgi4" class="list-group-item list-group-item-action flex-column align-items-start">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">freeCodeCamp</h5>
                             <span class="fa fa-free-code-camp"></span>
@@ -460,6 +452,7 @@
             </div>
             <div class="parallax__layer parallax__layer--base">
                 <div class="title">Base Layer</div>
+                <img class="vp" src="/image/city1.jpg">
             </div>
         </div>
         <!--Social Media stuff-->
@@ -467,10 +460,13 @@
 
         <!--Email-->
         <div id="group6" class="parallax__group">
+            <!--Social Background-->
+
             <div class="parallax__layer parallax__layer--back">
                 <div class="title">Background Layer</div>
             </div>
 
+            <!--Social Background-->
             <div class="parallax__layer parallax__layer--base">
 
                 <div class="email-Form box1">
@@ -515,7 +511,7 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for=""></label>
-                                        <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                                        <input type="number" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
                                         <small id="helpId" class="form-text text-muted">Help text</small>
                                     </div>
                                 </div>
@@ -533,10 +529,8 @@
 
 
                     </form>
-
                 </div>
             </div>
-
         </div>
         <!--Email-->
 
@@ -552,10 +546,6 @@
     <!--Parallax framework-->
 
     <!--Body Scripts-->
-
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
-
 </body>
 
 </html>

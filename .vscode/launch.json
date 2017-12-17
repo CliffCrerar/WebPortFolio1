@@ -12,6 +12,13 @@
             "webRoot": "${workspaceFolder}/WebPortFolio1"
         },
         {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "webRoot": "${workspaceFolder}/WebPortFolio1"
+        },
+        {
             "name": "Launch Edge",
             "type": "edge",
             "request": "launch",

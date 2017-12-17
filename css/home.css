@@ -19,6 +19,7 @@
 img.vp {
     width: 100%;
     max-height: auto;
+    margin: auto;
 }
 
 
@@ -289,6 +290,30 @@ p.mb-1 {
 
 small {
     font-size: 15px !important;
+}
+
+#lgi1:hover {
+    color: #fff !important;
+    background-color: #4267B2 !important;
+    border-color: #4267B2 !important;
+}
+
+#lgi2:hover {
+    color: #fff !important;
+    background-color: #283E4A !important;
+    border-color: #283E4A !important;
+}
+
+#lgi3:hover {
+    color: #fff !important;
+    background-color: #24292E !important;
+    border-color: #24292E !important;
+}
+
+#lgi4:hover {
+    color: #fff !important;
+    background-color: #006400 !important;
+    border-color: #006400 !important;
 }
 
 
