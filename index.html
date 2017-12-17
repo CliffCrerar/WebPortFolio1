@@ -17,16 +17,11 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/sbAniSbb.css">
 
-    <script>
-        window.onload = function() {
-            import $ from 'jquery';
-            let sass = require('sass');
-            let home = require('js/home')
-        }
-    </script>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 
 
@@ -82,7 +77,7 @@
         </div>
         <div class="row">
             <span id="scrlprompt" class="fa fa-chevron-circle-down" aria-hidden="true" style="color: transparent">
-                </span>
+            </span>
         </div>
     </div>
     <!--Scroll instruction-->
@@ -505,10 +500,11 @@
                             <div class="card-header" role="tab" id="headingOne">
                                 <h5 class="mb-0 fleft">
                                     <a href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Collapsible Group Item #1
+                                        Collapsible Group Item #1
                                     </a>
                                 </h5>
-                                <div class="left-angle fright"><button class="fa fa-angle-left"></button>
+                                <div class="left-angle fright">
+                                    <button class="fa fa-angle-left"></button>
                                 </div>
                             </div>
                             <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
