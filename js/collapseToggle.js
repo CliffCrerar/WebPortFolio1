@@ -1,22 +1,29 @@
 $(document).ready(function() {
-
-    $('div.card.tel').click(function() {
-        console.log($(this));
-
+    //Collapse controller
+    $('#headingOne').click(function() {
         $('#collapseOne').toggle('collapse');
 
         var isCollapsed = $('div.left-angle>button').hasClass('fa-angle-left');
-        console.log(isCollapsed);
 
         if (isCollapsed) {
             console.log(isCollapsed);
-            //$('div.left-angle>button').removeClass('fa-angle-left');
-            //$('div.left-angle>button').addClass('fa-angle-down');
-            $('div.left-angle>button').css("transform", "rotateOutDownRight");
+            $('div.left-angle>button').removeClass('fa-angle-left');
+            $('div.left-angle>button').addClass('fa-angle-down');
         } else {
             console.log(isCollapsed);
-            //$('div.left-angle>button').removeClass('fa-angle-down');
-            //$('div.left-angle>button').addClass('fa-angle-left');
+            $('div.left-angle>button').removeClass('fa-angle-down');
+            $('div.left-angle>button').addClass('fa-angle-left');
         }
     });
+    //Hover over
+    /*
+    $('#headingOne').hover(function() {
+        $('div.left-angle>button').addClass('gly-spin45');
+        console.log('hovering');
+    });
+    $('#headingOne').on('mouseleave', function() {
+        $('div.left-angle>button').removeClass('gly-spin45');
+        console.log('MouseLeaving');
+    });
+    */
 });

@@ -294,20 +294,20 @@ small {
 
 #lgi1:hover {
     color: #fff !important;
-    background-color: #4267B2 !important;
-    border-color: #4267B2 !important;
+    background-color: #4267b2 !important;
+    border-color: #4267b2 !important;
 }
 
 #lgi2:hover {
     color: #fff !important;
-    background-color: #283E4A !important;
-    border-color: #283E4A !important;
+    background-color: #283e4a !important;
+    border-color: #283e4a !important;
 }
 
 #lgi3:hover {
     color: #fff !important;
-    background-color: #24292E !important;
-    border-color: #24292E !important;
+    background-color: #24292e !important;
+    border-color: #24292e !important;
 }
 
 #lgi4:hover {
@@ -358,8 +358,15 @@ h5.mb-0>a {
 
 .fleft {
     float: left !important;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .fright {
     float: right !important;
+}
+
+#headingOne {
+    padding: 0% 0px 0% 12px;
 }

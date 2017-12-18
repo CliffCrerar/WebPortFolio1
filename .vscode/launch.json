@@ -9,42 +9,30 @@
             "type": "chrome",
             "request": "launch",
             "url": "http://localhost:5500/index.html",
-            "webRoot": "${workspaceFolder}/WebPortFolio1"
+            "webRoot": "${workspaceFolder}"
         },
         {
             "type": "chrome",
             "request": "attach",
             "name": "Attach to Chrome",
             "port": 9222,
-            "webRoot": "${workspaceFolder}/WebPortFolio1"
+            "webRoot": "${workspaceFolder}"
         },
         {
             "name": "Launch Edge",
             "type": "edge",
             "request": "launch",
-            "url": "http://localhost:5500/index.html",
-            "webRoot": "${workspaceRoot}/WebPortFolio1",
+            "url": "http://localhost/index.html",
+            "webRoot": "${workspaceRoot}",
             "sourceMaps": true
         },
         {
-            "name": "Firefox-Debug",
+            "name": "Launch Firefox",
             "type": "firefox",
             "request": "launch",
-            "runtimeExecutable": "/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox",
-            "port": 5500,
-            "program": "${workspaceRoot}/index.html",
-            "profileDir": "${workspaceRoot}/.firefoxProfile",
-            "stopOnEntry": false
-        },
-        {
-            "name": "Firefox-Debug-HTTP",
-            "type": "firefox",
-            "request": "launch",
-            "runtimeExecutable": "/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox",
-            "port": 6001,
-            "program": "http://localhost:5500/index.html",
-            "profileDir": "${workspaceRoot}/.firefoxProfile",
-            "stopOnEntry": false
+            "reAttach": false,
+            "url": "http://localhost:5500/index.html",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }

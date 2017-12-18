@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/paralax.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/sbAniSbb.css">
+    <link rel="stylesheet" href="css/glyphSpin.css">
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
@@ -34,6 +35,11 @@
     <script src="js/smScr.js"></script>
     <script src="js/collapseToggle.js"></script>
     <script src="js/social.js"></script>
+
+    <!--Date time picker-->
+    <script src="node_modules/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script src="js/email.js"></script>
+
 
     <!--Googel fonts-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Indie+Flower|Josefin+Sans|Lobster|Pacifico|Shadows+Into+Light" rel="stylesheet">
@@ -75,7 +81,7 @@
         </div>
         <div class="row">
             <span id="scrlprompt" class="fa fa-chevron-circle-down" aria-hidden="true" style="color: transparent">
-                </span>
+            </span>
         </div>
     </div>
     <!--Scroll instruction-->
@@ -499,35 +505,55 @@
 
                         <!--Telephone section-->
                         <div class="card tel" role="tablist">
+
                             <div class="card-header" role="tab" id="headingOne">
                                 <h5 class="mb-0 fleft">
-                                    <a href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Collapsible Group Item #1
+                                    <a href="#" aria-expanded="true" aria-controls="collapseOne">
+                                        Let me give you a call
                                     </a>
                                 </h5>
-                                <div class="left-angle fright"><button class="fa fa-angle-left"></button>
+                                <div class="left-angle fright">
+                                    <button class="btn fa fa-angle-left"></button>
                                 </div>
                             </div>
+
+                            <!--Collapsable section-->
                             <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body">
-                                    <div class="form-group">
-                                        <label for=""></label>
-                                        <input type="number" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-                                        <small id="helpId" class="form-text text-muted">Help text</small>
+
+                                    <!--Tel number form group-->
+                                    <div class="form-group form-inline">
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <span class="fa fa-phone"></span>
+                                            </div>
+                                            <input type="tel" class="form-control form-control-sm" name="telephone" id="telInput" aria-describedby="telInfo" placeholder="Place number here">
+                                        </div>
                                     </div>
+                                    <!--Date form group-->
+                                    <div class="form-group form-inline">
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <span class="fa fa-calendar"></span>
+                                            </div>
+                                            <input type="date" class="form-control form-control-sm" name="date pick" id="datePick" aria-describedby="datePickHelp" placeholder="Date">
+                                        </div>
+                                    </div>
+                                    <!--Time form group-->
+                                    <div class="form-group">
+                                        <label for="#timePick">Time:</label>
+                                        <input type="time" class="form-control form-control-sm" name="time pick" id="timePick" aria-describedby="timePickHelp" placeholder="">
+                                        <small id="timePickHelp" class="form-text text-muted">Help text</small>
+                                    </div>
+
                                 </div>
                             </div>
+                            <!--Collapsable section-->
+
                         </div>
                         <!--Telephone section-->
-
-
-
-
-
-
-
-
-
 
                     </form>
                 </div>
