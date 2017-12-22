@@ -36,8 +36,8 @@
     <script src="js/endlessRoll.js"></script>
     <script src="js/portfolio.js"></script>
     <script src="js/smScr.js"></script>
-    <script src="js/collapseToggle.js"></script>
     <script src="js/social.js"></script>
+    <script src="js/collapseToggle.js"></script>
     <script src="js/email.js"></script>
 
     <!--Formatting by Cleave-->
@@ -487,19 +487,17 @@
             <div class="parallax__layer parallax__layer--base">
 
                 <div class="email-Form box1">
-
+                    <!--Email Form-->
                     <form class="box1 container">
-
                         <h1 class="row">Please send me an email:</h1>
-
                         <div class="form-group row" id="accordian" role="tablist">
                             <div class="col input-group">
                                 <div class="input-group-addon">Name</div>
-                                <input type="text" class="form-control" name="inputName" id="fName" placeholder="First Name">
+                                <input type="text" class="form-control" name="nameInput" id="fName" placeholder="First Name">
                             </div>
                             <div class="col input-group">
                                 <div class="input-group-addon">Surname</div>
-                                <input type="text" class="form-control" name="inputName" id="lName" placeholder="Last Name">
+                                <input type="text" class="form-control" name="surnameInput" id="lName" placeholder="Last Name">
                             </div>
                         </div>
 
@@ -509,7 +507,7 @@
                                 <div class="input-group-addon">
                                     <span class="fa fa-envelope"></span>
                                 </div>
-                                <input type="email" class="form-control " name="inputName" id="inputName" placeholder="Your e-mail address">
+                                <input type="email" class="form-control " name="emailInput" id="inputName" placeholder="Your e-mail address">
                             </div>
                         </div>
 
@@ -518,38 +516,35 @@
 
                             <div class="card-header" role="tab" id="headingOne">
                                 <h5 class="mb-0 fleft">
-                                    <a href="#" aria-expanded="true" aria-controls="collapseOne">
-                                        Let me give you a call
-                                    </a>
+                                    Let me give you a call (optional)
                                 </h5>
                                 <div class="left-angle fright">
-                                    <button class="btn fa fa-angle-left"></button>
+                                    <input type="checkbox" class="callme">
                                 </div>
                             </div>
 
                             <!--Collapsable section-->
                             <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
+                                <div class="card-body row">
 
                                     <!--Tel number form group-->
-                                    <div class="form-group">
+                                    <div class="form-group col-sm-5">
 
                                         <div class="input-group">
                                             <div class="input-group-addon">
                                                 <span class="fa fa-phone"></span>
                                             </div>
-                                            <input type="tel" class="form-control form-control-sm" name="telephone" id="telInput" aria-describedby="telInfo" placeholder="Type number here">
+                                            <input type="tel" class="form-control form-control-sm" name="telInput" id="telInput" aria-describedby="telInfo" placeholder="Type your number here">
                                         </div>
 
                                     </div>
                                     <!--/Tel number form group-->
 
                                     <!--date and time form group-->
-                                    <div class="form-group">
+                                    <div class="form-group col-sm-7">
 
                                         <div class="input-group date form_datetime " data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
-                                            <input class="form-control form-control-sm" size="16" type="text" value="" readonly>
-                                            <span class="input-group-addon"><i class="icon-remove fa fa-remove"></i></span>
+                                            <input class="form-control form-control-sm" size="16" type="text" name="telTimeInput" readonly placeholder="When to call you">
                                             <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
                                         </div>
 
@@ -558,11 +553,16 @@
                                 </div>
                             </div>
                             <!--/Collapsable section-->
-
                         </div>
                         <!--/Telephone section-->
 
+                        <div class="form-group">
+                            <label for=""></label>
+                            <textarea class="form-control" name="commentInput" id="comentInput" rows="3" placeholder="leave me a comment about me portfolio or make an enquiry"></textarea>
+                        </div>
+                        <button type="button" name="sendMail" id="sendMail" class="btn btn-primary btn-block form-control" btn-lg btn-block>Send Email</button>
                     </form>
+                    <!--/Email Form-->
                 </div>
             </div>
         </div>

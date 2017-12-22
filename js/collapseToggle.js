@@ -1,19 +1,7 @@
 $(document).ready(function() {
     //Collapse controller
-    $('#headingOne').click(function() {
+    $('.callme').on('change', function() {
         $('#collapseOne').toggle('collapse');
-
-        var isCollapsed = $('div.left-angle>button').hasClass('fa-angle-left');
-
-        if (isCollapsed) {
-            //console.log(isCollapsed);
-            $('div.left-angle>button').removeClass('fa-angle-left');
-            $('div.left-angle>button').addClass('fa-angle-down');
-        } else {
-            //console.log(isCollapsed);
-            $('div.left-angle>button').removeClass('fa-angle-down');
-            $('div.left-angle>button').addClass('fa-angle-left');
-        }
     });
     //Hover over
     /*

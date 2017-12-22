@@ -4,6 +4,7 @@ $(document).ready(function() {
         phoneRegionCode: 'za',
     });
 
+    //Configure call time dropdown
     var today = new Date();
     var yeaR = today.getFullYear();
     var montH = today.getMonth();
@@ -25,4 +26,23 @@ $(document).ready(function() {
         startdate: StartDate,
         pickerPosition: 'top-left',
     });
+
+    /****Tooltips****/
+    //First name
+    $('[name="nameInput"]').attr('data-toggle', 'tooltip');
+    $('[name="nameInput"]').attr('title', 'Enter first-name');
+    //Last name
+    $('[name="surnameInput"]').attr('data-toggle', 'tooltip');
+    $('[name="surnameInput"]').attr('title', 'Enter Last-name');
+    //Email
+    $('[name="emailInput"]').attr('data-toggle', 'tooltip');
+    $('[name="emailInput"]').attr('title', 'Enter the email address where I can reach you.');
+    //Email
+    $('[name="telInput"]').attr('data-toggle', 'tooltip');
+    $('[name="telInput"]').attr('title', 'Remember this is not compulsory');
+    //Comment
+    $('[name="commentInput"]').attr('data-toggle', 'tooltip');
+    $('[name="telIcommentInputnput"]').attr('title', 'Constructive critisism is welcome');
+
+    $('.form-control').tooltip({ delay: { show: 1000, hide: 500 } });
 });
