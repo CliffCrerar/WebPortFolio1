@@ -4,11 +4,11 @@
     -webkit-animation: flash 2s ease-out;
     -ms-animation: flash 2s ease-out;
     animation: flash 2s ease-out;
-    -o-animation-iteration-count: 10;
-    -moz-animation-iteration-count: 10;
-    -webkit-animation-iteration-count: 10;
-    -ms-animation-iteration-count: 10;
-    animation-iteration-count: 10;
+    -o-animation-iteration-count: 5;
+    -moz-animation-iteration-count: 5;
+    -webkit-animation-iteration-count: 5;
+    -ms-animation-iteration-count: 5;
+    animation-iteration-count: 5;
 }
 
 @keyframes flash {

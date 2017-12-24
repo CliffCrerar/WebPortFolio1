@@ -62,10 +62,6 @@ img.vpc {
     font-family: Poiret One;
     font-size: var(--nabrandSize) !important;
     width: 10%;
-    -webkit-transition: width 2s !important;
-    -moz-transition: width 2s !important;
-    -o-transition: width 2s !important;
-    transition: width 2s !important;
 }
 
 .navbar-brand:hover {
@@ -141,6 +137,16 @@ div.navbar>div.row:first-child>p {
 
 
 /* Group 1 css */
+
+.scrMsg {
+    display: none;
+}
+
+.scrollDown {
+    border-radius: 75px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10%;
+}
 
 
 /* ------------------------------------ */
