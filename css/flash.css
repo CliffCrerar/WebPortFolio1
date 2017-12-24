@@ -1,10 +1,14 @@
 .flash {
+    -o-animation: flash 2s ease-out;
     -moz-animation: flash 2s ease-out;
-    -moz-animation-iteration-count: 10;
     -webkit-animation: flash 2s ease-out;
-    -webkit-animation-iteration-count: 10;
     -ms-animation: flash 2s ease-out;
+    animation: flash 2s ease-out;
+    -o-animation-iteration-count: 10;
+    -moz-animation-iteration-count: 10;
+    -webkit-animation-iteration-count: 10;
     -ms-animation-iteration-count: 10;
+    animation-iteration-count: 10;
 }
 
 @keyframes flash {
@@ -44,6 +48,18 @@
 }
 
 @-ms-keyframes flash {
+    0% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: #fbf8b2;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@-o-keyframes flash {
     0% {
         background-color: transparent;
     }

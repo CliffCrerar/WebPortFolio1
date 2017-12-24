@@ -2,9 +2,11 @@
 
 $(document).ready(function() {
     //Correction of image viewhight
+    'use strict';
     var vph;
     var vpw;
     var agentCheck = window.navigator.userAgent; //Get window data to determine browser
+    var agent;
     //Define viewport for browser compatibility
 
     //Determine browser by looking at the DOM
@@ -24,7 +26,8 @@ $(document).ready(function() {
 
     var imgElement = $('img.vp');
     $.each(imgElement, function(i) {
-        imgElement[i].height = vph;
-        imgElement[i].width = vpw;
+        console.log(i, imgElement[i], imgElement[i].height, imgElement[i].width, vph, vpw);
+        //imgElement[i].height = vph;
+        //imgElement[i].width = vpw;
     });
 });

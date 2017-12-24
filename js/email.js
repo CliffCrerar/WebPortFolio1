@@ -45,4 +45,18 @@ $(document).ready(function() {
     $('[name="telIcommentInputnput"]').attr('title', 'Constructive critisism is welcome');
 
     $('.form-control').tooltip({ delay: { show: 1000, hide: 500 } });
+
+    //Gather form data on click
+    $('#sendMail').on('click', function(e) {
+        console.log(e);
+
+        var fName = $('#fName').val();
+        var lName = $('#lName').val();
+        var eMail = $('#emailRet').val();
+        var telNo = $('#telInput').val();
+        var cDate = $('#cDate').val();
+        var comm = $('#comentInput').val();
+
+        console.log(fName, lName, eMail, telNo, cDate, comm);
+    });
 });

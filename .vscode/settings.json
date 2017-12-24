@@ -130,4 +130,21 @@
         "scss"
     ],
     "liveServer.settings.ChromeDebuggingAttachment": false,
+    "javascript.format.enable": true,
+    "javascript.validate.enable": true,
+    "javascript.referencesCodeLens.enabled": true,
+    "javascript.nameSuggestions": true,
+    "jslint.enable": false,
+    "explorer.decorations.colors": true,
+    "colorize.languages": [
+        "css",
+        "sass",
+        "scss",
+        "less",
+        "postcss",
+        "sss",
+        "stylus",
+        "xml",
+        "svg"
+    ],
 }

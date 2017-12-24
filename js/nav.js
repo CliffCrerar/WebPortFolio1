@@ -30,7 +30,7 @@ $(document).ready(function() {
                 switch (srcGroup) {
                     case 'group1':
                         $('a.navbar-brand').html('Welcome');
-                        $('a.navbar-brand').css({ 'font-family': 'Pacifico' });
+                        $('a.navbar-brand').css({ 'font-family': 'Poiret One' });
                         break;
                     case 'group2':
                         $('a.navbar-brand').html('Title');
@@ -47,13 +47,16 @@ $(document).ready(function() {
                         $('a.navbar-brand').css({ 'font-family': 'Dancing Script' });
                         break;
                     case 'group5':
-                        $('a.navbar-brand').html('Socila');
+                        $('a.navbar-brand').html('Social');
+                        $('a.navbar-brand').css({ 'font-family': 'Pacifico' });
                         break;
                     case 'group6':
                         $('a.navbar-brand').html('Email');
+                        $('a.navbar-brand').css({ 'font-family': 'Pacifico' });
                         break;
                     case 'group7':
                         $('a.navbar-brand').html('Thanks!');
+                        $('a.navbar-brand').css({ 'font-family': 'Pacifico' });
                         break;
                 }
             }

@@ -1,3 +1,6 @@
+/* ------------------------------------ */
+
+
 /* General CSS */
 
 :root {
@@ -16,22 +19,46 @@
     border: 1px solid rgb(68, 0, 255);
 }
 
-img.vp {
+img.vpn {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*
     width: 100%;
     max-height: auto;
+    */
     margin: auto;
 }
+
+img.vpc {
+    max-height: 100%;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-height: auto;
+    overflow: hidden;
+}
+
+
+/* ------------------------------------ */
 
 
 /* Navigation elements CSS */
 
 .navbar-brand {
-    font-family: pacifico;
+    font-family: Poiret One;
     font-size: var(--nabrandSize) !important;
-    width: 7%;
+    width: 10%;
     -webkit-transition: width 2s !important;
-    /* For Safari 3.1 to 6.0 */
-    transition: text-shadow 2s !important;
+    -moz-transition: width 2s !important;
+    -o-transition: width 2s !important;
+    transition: width 2s !important;
 }
 
 .navbar-brand:hover {
@@ -95,14 +122,20 @@ div.navbar>div.row:first-child>p {
 }
 
 
+/* ------------------------------------ */
+
+
 /* Group 1 css */
 
-span.fa-chevron-circle-down {
+#scrlprompt {
     position: relative;
     left: 50%;
     color: white;
     font-size: calc(100% + 3vh);
 }
+
+
+/* ------------------------------------ */
 
 
 /* Group 2 css */
@@ -130,8 +163,11 @@ div>h2 {
 }
 
 .gr2Title>h3 {
-    font-family: consolas;
+    font-family: Space Mono;
 }
+
+
+/* ------------------------------------ */
 
 
 /* Group 3 css */
@@ -150,6 +186,9 @@ h1.display-3 {
 div.carousel-item {
     overflow: hidden;
 }
+
+
+/* ------------------------------------ */
 
 
 /* Group 4 */
@@ -193,6 +232,8 @@ c2.slideshow {
     margin: auto;
     animation: slideshow 25s linear infinite;
     -webkit-animation: slideshow 25s linear infinite;
+    -moz-animation: slideshow 25s linear infinite;
+    -o-animation: slideshow 25s linear infinite;
     transform: translate3d(0, 0, 0);
 }
 
@@ -322,6 +363,18 @@ small {
 
 /* Group 6 */
 
+div.emailTitle {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1.display-1 {
+    font-family: Nova Mono;
+}
+
 .email-Form {
     font-size: initial;
     position: relative;
@@ -336,24 +389,22 @@ small {
     position: inherit;
     font-style: initial;
     height: 100%;
-    background: coral;
+    background: transparent;
     min-width: 320px;
     max-width: 50%;
     transform-style: initial;
+}
+
+.form-controls {
+    border-style: none !important;
 }
 
 div.card.tel {
     font-size: initial;
 }
 
-h5.mb-0>a {
-    text-decoration: none;
-    text-decoration-line: none;
-    text-decoration-style: solid;
-    text-decoration-color: black;
-    -moz-text-decoration-color: black;
-    -moz-text-decoration-style: none;
-    -moz-text-decoration-line: none;
+h5.mb-0 {
+    color: white;
 }
 
 .fleft {
@@ -375,6 +426,17 @@ h5.mb-0>a {
     padding: 2px 12px 2px 12px;
 }
 
-.col.input-group>.form-control {
-    border: 24px !important;
+.card.tel {
+    background: transparent;
+    border: 0px transparent;
+}
+
+.card.tel>.card-header {
+    background: rgba(133, 12, 12, 0.3);
+}
+
+.input-group-addon {
+    color: white !important;
+    background: #343a40 !important;
+    border: 1px solid #343a40 !important;
 }
