@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/flash.css">
     <link rel="stylesheet" href="css/popper.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/paralax.css">
+    <link rel="stylesheet" href="css/parallax.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/sbAniSbb.css">
     <link rel="stylesheet" href="css/glyphSpin.css">
@@ -25,10 +25,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-    <!--
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.7.0/combined/js/gijgo.min.js" type="text/javascript"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.7.0/combined/css/gijgo.min.css" rel="stylesheet" type="text/css">
-    -->
     <!--local script files-->
     <script src="js/home.js"></script>
     <script src="js/nav.js"></script>
@@ -89,11 +85,13 @@
 
     <!--Scroll instruction-->
     <div class="navbar fixed-bottom container">
+        <!--
         <div class="row alert center-text" role="alert">
             <p class="text-center">Please scroll down</p>
         </div>
+        -->
         <div class="row">
-            <span id="scrlprompt" class="fa fa-chevron-circle-down" aria-hidden="true" style="color: transparent">
+            <span id="scrlprompt" class="fa fa-chevron-circle-down" style="color: transparent">
             </span>
         </div>
     </div>
@@ -108,6 +106,11 @@
             <div class="parallax__layer parallax__layer--base">
                 <img class="vp vpn" src="image/tie.jpg" alt="homePic">
             </div>
+
+            <div class="row alert center-text" role="alert">
+                <p class="text-center">Please scroll down</p>
+            </div>
+
         </div>
         <!--Home-->
 
@@ -409,7 +412,7 @@
             </div>
 
             <div class="parallax__layer parallax__layer--deep">
-                <img class="vp vpn" src="image/city2.jpg" alt="deep">
+                <img class="vp vpn" src="image/city2.jpg" alt="city2">
             </div>
 
         </div>
@@ -472,7 +475,7 @@
             </div>
             <div class="parallax__layer parallax__layer--base">
                 <div class="title">Base Layer</div>
-                <img class="vp vpn" src="/image/city1.jpg">
+                <img class="vp vpn" src="/image/city1.jpg" alt="city2">
             </div>
         </div>
         <!--Social Media stuff-->
@@ -480,18 +483,20 @@
 
         <!--Email-->
         <div id="group6" class="parallax__group">
-            <!--Email Background-->
 
+            <!--Email Background-->
             <div class="parallax__layer parallax__layer--back">
-
-                <div class="emailTitle">
-
-                    <h1 class="display-1 text-center">SEND A E-MAIL<span class="fas fa-envelope"></span></h1>
-                </div>
                 <img class="vp vpn" src="image/lipgloss.jpg" alt="lipgloss">
-            </div>
+                <div class="emailTitle">
+                    <h1 class="display-1 text-center">SEND A E-MAIL
+                        <span class="fas fa-envelope"></span>
+                    </h1>
+                </div>
 
-            <!--Email Background-->
+            </div>
+            <!--/Email Background-->
+
+            <!--Email foreground-->
             <div class="parallax__layer parallax__layer--base">
 
                 <div class="email-Form">
@@ -564,7 +569,9 @@
 
                                         <div class="input-group date form_datetime " data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
                                             <input class="form-control form-control-sm" id="cDate" size="16" type="text" name="telTimeInput" readonly placeholder="When to call you">
-                                            <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                                            <span class="input-group-addon">
+                                                <span class="fa fa-calendar"></span>
+                                            </span>
                                         </div>
 
                                     </div>
@@ -573,6 +580,7 @@
                                 </div>
                             </div>
                             <!--/Collapsable section-->
+
                         </div>
                         <!--/Telephone section-->
 
@@ -585,6 +593,7 @@
                     <!--/Email Form-->
                 </div>
             </div>
+            <!--/Email foreground-->
         </div>
         <!--/Email-->
 

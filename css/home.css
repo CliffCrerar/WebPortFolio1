@@ -15,33 +15,40 @@
     display: none;
 }
 
+::-moz-scrollbar {
+    display: none;
+}
+
+::-o-scrollbar {
+    display: none;
+}
+
+::-ms-scrollbar {
+    display: none;
+}
+
+.parallax__layer {
+    overflow: hidden;
+}
+
 .box1 {
     border: 1px solid rgb(68, 0, 255);
 }
 
 img.vpn {
-    height: 100%;
-    width: auto;
-    overflow: hidden;
+    overflow: hidden !important;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*
-    width: 100%;
-    max-height: auto;
-    */
     margin: auto;
 }
 
 img.vpc {
-    max-height: 100%;
-    width: 100%;
+    overflow: hidden !important;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
-    max-height: auto;
     overflow: hidden;
 }
 
@@ -62,7 +69,7 @@ img.vpc {
 }
 
 .navbar-brand:hover {
-    text-shadow: 10px -10px 5px rgb(224, 209, 0);
+    text-shadow: 10px -10px 5px rgb(255, 255, 255);
 }
 
 a.nav-link:hover {
@@ -121,18 +128,19 @@ div.navbar>div.row:first-child>p {
     width: 100%;
 }
 
+#scrlprompt {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: calc(100% + 3vh);
+}
+
 
 /* ------------------------------------ */
 
 
 /* Group 1 css */
-
-#scrlprompt {
-    position: relative;
-    left: 50%;
-    color: white;
-    font-size: calc(100% + 3vh);
-}
 
 
 /* ------------------------------------ */
@@ -183,8 +191,8 @@ h1.display-3 {
     font-size: calc(50px + 1vh);
 }
 
-div.carousel-item {
-    overflow: hidden;
+div.carousel-inner {
+    overflow: hidden !important;
 }
 
 
@@ -373,6 +381,8 @@ div.emailTitle {
 
 h1.display-1 {
     font-family: Nova Mono;
+    color: white;
+    text-shadow: -20px -20px 10px black;
 }
 
 .email-Form {

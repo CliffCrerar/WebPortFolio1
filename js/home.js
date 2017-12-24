@@ -26,8 +26,36 @@ $(document).ready(function() {
 
     var imgElement = $('img.vp');
     $.each(imgElement, function(i) {
-        console.log(i, imgElement[i], imgElement[i].height, imgElement[i].width, vph, vpw);
-        //imgElement[i].height = vph;
-        //imgElement[i].width = vpw;
+        var cslog = function() {
+            console.log(
+                'Adj H:',
+                i,
+                imgElement[i],
+                'IMG H:',
+                imgElement[i].height,
+                'IMG W:',
+                imgElement[i].width,
+                'VPH',
+                vph,
+                'VPW',
+                vpw
+            );
+        };
+        //cslog();
+
+        $(this).css({ height: vph });
+        $(this).css({ width: 'auto' });
+
+        //cslog();
+
+        var elH = imgElement[i].height;
+        var elW = imgElement[i].width;
+        if (elW < vpw) {
+            //console.log('true');
+            $(this).css({ width: vpw });
+            $(this).css({ height: 'auto' });
+        }
+
+        //cslog();
     });
 });

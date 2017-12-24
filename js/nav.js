@@ -11,14 +11,12 @@ $(document).ready(function() {
     $('.parallax__group').mouseenter(function(Event) {
         var currGroup = Event.currentTarget.id;
 
-        /*
         setTimeout(function() {
             document.getElementById(currGroup).scrollIntoView({
                 block: 'start',
                 behavior: 'smooth',
             });
         }, 1000);
-        */
 
         $('a.nav-link.active').removeClass('active');
         var srcGroup = Event.currentTarget.id;
@@ -51,12 +49,12 @@ $(document).ready(function() {
                         $('a.navbar-brand').css({ 'font-family': 'Pacifico' });
                         break;
                     case 'group6':
-                        $('a.navbar-brand').html('Email');
-                        $('a.navbar-brand').css({ 'font-family': 'Pacifico' });
+                        $('a.navbar-brand').html('E-mail');
+                        $('a.navbar-brand').css({ 'font-family': 'Krona One' });
                         break;
                     case 'group7':
-                        $('a.navbar-brand').html('Thanks!');
-                        $('a.navbar-brand').css({ 'font-family': 'Pacifico' });
+                        $('a.navbar-brand').html('Thank you');
+                        $('a.navbar-brand').css({ 'font-family': 'Berkshire Swash' });
                         break;
                 }
             }

@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     //Fade in and out scroll instruction
     setTimeout(function() {
         $('div.row.alert').fadeIn('slow').delay(2000).fadeOut('slow');
@@ -9,5 +8,4 @@ $(document).ready(function() {
     setTimeout(function() {
         $('#scrlprompt').addClass('flash');
     }, 3000);
-
 });
