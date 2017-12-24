@@ -78,7 +78,7 @@
     },
     "telemetry.enableCrashReporter": true,
     "telemetry.enableTelemetry": true,
-    "files.autoSave": "onWindowChange",
+    "files.autoSave": "onFocusChange",
     "editor.minimap.showSlider": "always",
     "editor.quickSuggestions": {
         "other": true,
