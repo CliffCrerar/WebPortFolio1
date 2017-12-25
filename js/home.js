@@ -26,36 +26,22 @@ $(document).ready(function() {
 
     var imgElement = $('img.vp');
     $.each(imgElement, function(i) {
-        var cslog = function() {
-            console.log(
-                'Adj H:',
-                i,
-                imgElement[i],
-                'IMG H:',
-                imgElement[i].height,
-                'IMG W:',
-                imgElement[i].width,
-                'VPH',
-                vph,
-                'VPW',
-                vpw
-            );
-        };
-        //cslog();
+        var el = this;
 
-        $(this).css({ height: vph });
-        $(this).css({ width: 'auto' });
+        console.log('I', i, el, 'IMG H:', el.height, 'IMG W:', el.width, 'VPH:', vph, 'VPW:', vpw);
 
-        //cslog();
+        $(this).css('height', vph);
+        $(this).css('width', 'auto');
+
+        console.log('H', i, el, 'IMG H:', el.height, 'IMG W:', el.width, 'VPH:', vph, 'VPW:', vpw);
 
         var elH = imgElement[i].height;
         var elW = imgElement[i].width;
         if (elW < vpw) {
-            //console.log('true');
-            $(this).css({ width: vpw });
-            $(this).css({ height: 'auto' });
+            console.log('true');
+            $(this).css('width', vpw);
+            $(this).css('height', 'auto');
+            console.log('W', i, el, 'IMG H:', el.height, 'IMG W:', el.width, 'VPH:', vph, 'VPW:', vpw);
         }
-
-        //cslog();
     });
 });

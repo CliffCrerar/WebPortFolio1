@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Add smooth scrolling to all links
-
+    /*
     function Scroll_To(elem, pos) {
         var y = elem.scrollTop;
         y += (pos - y) * 0.3;
@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     Scroll_To('group3', 1000);
 
-    /*
+    
 
     $('a').on('click', function(event) {
       // Make sure this.hash has a value before overriding default behavior
