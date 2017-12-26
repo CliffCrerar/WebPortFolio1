@@ -35,8 +35,8 @@ $(document).ready(function() {
 
         console.log('H', i, el, 'IMG H:', el.height, 'IMG W:', el.width, 'VPH:', vph, 'VPW:', vpw);
 
-        var elH = imgElement[i].height;
-        var elW = imgElement[i].width;
+        var elH = this.height;
+        var elW = this.width;
         if (elW < vpw) {
             console.log('true');
             $(this).css('width', vpw);
