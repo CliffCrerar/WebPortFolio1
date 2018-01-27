@@ -50,6 +50,7 @@ img.vpc {
     left: 50%;
     transform: translateX(-50%);
     margin: auto;
+    min-width: 100%;
 }
 
 
@@ -130,6 +131,7 @@ div.navbar>div.row:first-child>p {
     transform: translateX(-50%);
     color: white;
     font-size: calc(100% + 3vh);
+    width: 100%;
 }
 
 
@@ -140,12 +142,13 @@ div.navbar>div.row:first-child>p {
 
 .scrMsg {
     display: none;
+    width: 50%;
 }
 
 .scrollDown {
     border-radius: 75px;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 10%;
+    padding: 5%;
 }
 
 
@@ -420,30 +423,26 @@ h1.display-1 {
 }
 
 div.card.tel {
+    margin-bottom: 1%;
     font-size: initial;
 }
 
-h5.mb-0 {
-    color: white;
+h5 {
+    margin-bottom: 0px !important;
 }
 
 .fleft {
     float: left !important;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.fleft>a {
-    font-size: 3vh;
-}
-
-.fright {
-    float: right !important;
+    left: 50%;
 }
 
 #headingOne {
     padding: 2px 12px 2px 12px;
+}
+
+.form-group.row.email {
+    margin-bottom: 0px;
 }
 
 .card.tel {
@@ -452,7 +451,8 @@ h5.mb-0 {
 }
 
 .card.tel>.card-header {
-    background: rgba(133, 12, 12, 0.3);
+    background: rgba(255, 255, 255, 0.705);
+    border-radius: 24px;
 }
 
 .input-group-addon {
@@ -467,11 +467,19 @@ h5.mb-0 {
 
 /* Group 7 */
 
-.tycontent {
+.tyContent {
     width: 100%;
     height: 70%;
 }
 
-.tyLeftCol .tyRightCol {
+.cont.container {
+    height: 90%;
+}
+
+.tyCols {
+    height: 100%;
+}
+
+.tyCol {
     height: 100%;
 }

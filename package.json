@@ -1,0 +1,25 @@
+{
+  "name": "webportfolio1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cleave.js",
+  "dependencies": {
+    "connect": "^3.6.5",
+    "node.js": "0.0.0",
+    "nodemailer": "^4.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CliffCrerar/WebPortFolio1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CliffCrerar/WebPortFolio1/issues"
+  },
+  "homepage": "https://github.com/CliffCrerar/WebPortFolio1#readme"
+}
