@@ -63,26 +63,26 @@ $(document).ready(function() {
         var cDate = $("#cDate").val();
         var comm = $("#comentInput").val();
 
-        var msg = {
+        var msg = JSON.stringify({
             fname: fName,
             lname: lName,
             email: eMail,
             telNo: telNo,
             cDate: cDate,
             comm: comm
-        };
+        });
         //var msgHtml = fName + lName + eMail + telNo + cDate + comm;
 
-        var ip = "172.20.10.3";
-        var port = "8005";
+        var ip = "34.242.179.249";
+        var port = "8001";
         $.ajax({
             method: "POST",
             url: "http://" + ip + ":" + port,
             type: "text",
             //timeout: 5000,
-            data: JSON.stringify(msg),
-            success: function(data) {
-                alert("data posted");
+            data: msg,
+            success: function(stat) {
+                alert("data posted :");
             },
             error: function(jqXHR, textStatus, err) {
                 //show error message
