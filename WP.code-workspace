@@ -119,16 +119,6 @@
         "css.lint.hexColorLength": "warning",
         "css.trace.server": "messages",
         "css.validate": true,
-        "css.fileExtensions": [
-            "css",
-            "scss"
-        ],
-        "csstriggers.showDecoration": true,
-        "prettier.cssEnable": [
-            "css",
-            "less",
-            "scss"
-        ],
         "liveServer.settings.ChromeDebuggingAttachment": false,
         "javascript.format.enable": true,
         "javascript.validate.enable": true,
@@ -148,5 +138,19 @@
         ],
         "workbench.fontAliasing": "default",
         "git.ignoreLimitWarning": true,
+        "jsFileHeader.Author": "Cliff Crerar",
+        "jshint.config": ".jshintrc",
+        "jshint.lintHTML": true,
+        "jshint.packageManager": "npm",
+        "jshint.trace.server": "verbose",
+        "eslint.enable": true,
+        "eslint.provideLintTask": true,
+        "eslint.trace.server": "verbose",
+        "eslint.validate": [
+            "javascript",
+            "javascriptreact"
+        ],
+        "eslint.alwaysShowStatus": true,
+        "eslint.nodePath": "./node_modules/eslint/",
     }
 }
