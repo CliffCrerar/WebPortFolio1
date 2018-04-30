@@ -5,11 +5,12 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 03:04:54 
- * Last modified  : 2018-04-30 03:23:43
+ * Last modified  : 2018-04-30 05:53:40
  */
 
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
     context: __dirname,
@@ -64,7 +65,11 @@ module.exports = {
     plugins: [
         new HTMLWebpackPlugin({
             title: 'Cliff Crerar Portfolio',
-            favicon: './favicon.ico'
+            favicon: './favicon.ico',
+            meta: require('./json/meta.json')
+        }),
+        new webpack.DefinePlugin({
+
         })
 
     ]

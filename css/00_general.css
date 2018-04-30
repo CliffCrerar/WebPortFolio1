@@ -1,0 +1,47 @@
+/**
+ * long description for the file
+ *
+ * @summary CSS that applies to items accross the whole document
+ * @author Cliff Crerar
+ *
+ * Created at     : 2018-04-30 04:44:25 
+ * Last modified  : 2018-04-30 05:42:54
+ */
+
+/* General CSS */
+
+:root {
+    --g2titleborder: silver;
+    --cardBorderRadius: calc(.25rem + 24px);
+    --cardBorderRadiusB: calc(.25rem + 24px);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-scrollbar {
+    display: none;
+}
+
+::-o-scrollbar {
+    display: none;
+}
+
+::-ms-scrollbar {
+    display: none;
+}
+/*
+.parallax__layer {
+    overflow: hidden;
+}
+*/
+
+.sectionBg {
+    height: 100%;
+    width: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

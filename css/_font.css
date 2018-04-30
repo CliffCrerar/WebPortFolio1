@@ -1,0 +1,39 @@
+/**
+ * long description for the file
+ *
+ * @summary Loads the fonts used in the page
+ * @author Cliff Crerar
+ *
+ * Created at     : 2018-04-30 04:17:44 
+ * Last modified  : 2018-04-30 04:21:57
+ */
+
+/*
+
+FONTS LOADED:
+
+1. DANCING SCRIPT
+2. GLORIA HALLEJUJA
+3. INDIE FLOWER
+4. JOSEFIN SANS
+5. LOBSTER
+6. PACIFICO
+7. SHADOWS INTO LIGHT
+8. BERKSHIRE SWASH
+9. KRONA ONE
+10. POIRET ONE
+11. RUBIK MONO ONE
+12. SHRIKHAND
+13. CUTIVE MONO
+14. NOVA MONO
+15. OVERPASS MONO
+16. ROBOTO MONO
+17. SHARE TECH MONO
+18. SPACE MONO
+
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Indie+Flower|Josefin+Sans|Lobster|Pacifico|Shadows+Into+Light);
+@import url(https://fonts.googleapis.com/css?family=Berkshire+Swash|Krona+One|Poiret+One|Rubik+Mono+One|Shrikhand);
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro|Cutive+Mono|Nova+Mono|Overpass+Mono|Roboto+Mono|Share+Tech+Mono|Space+Mono);

@@ -1,0 +1,18 @@
+/**
+ * long description for the file
+ *
+ * @summary CSS that applies to the landing screen of the page
+ * @author Cliff Crerar
+ *
+ * Created at     : 2018-04-30 04:47:23 
+ * Last modified  : 2018-04-30 05:30:14
+ */
+
+ img.vpn {
+    overflow: hidden !important;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
