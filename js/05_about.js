@@ -5,17 +5,12 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-07 22:45:53 
- * Last modified  : 2018-05-08 01:20:11
+ * Last modified  : 2018-05-08 01:22:55
  */
 
-//console.log(window.visualViewport.height)
-
-//$('.slick-item>img').height(window.visualViewport.height)
-
+/* TURN ON CAROUSEL */
 $('.slick-carousel').slick({
     autoplay: true,
     arrows: false,
     dots: false,
 });
-
-//$('.slick-slide').height(window.innerHeight);
