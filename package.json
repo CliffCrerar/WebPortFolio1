@@ -7,11 +7,13 @@
     "bootstrap": "^4.1.0",
     "bootstrap-datetime-picker": "^2.4.4",
     "connect": "^3.6.5",
+    "detect-browser": "^2.4.0",
     "jquery": "^3.3.1",
+    "jquery-smooth-scroll": "^2.2.0",
     "node": "^10.0.0",
     "node.js": "0.0.0",
-    "nodemailer": "^4.4.2",
     "popper.js": "^1.14.3",
+    "slick-carousel": "^1.8.1",
     "webpack-jquery-ui": "^1.0.0"
   },
   "devDependencies": {

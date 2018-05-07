@@ -5,14 +5,11 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 04:47:23 
- * Last modified  : 2018-04-30 05:30:14
+ * Last modified  : 2018-05-08 00:06:46
  */
 
- img.vpn {
-    overflow: hidden !important;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: auto;
+.alert{
+    position: absolute;
+    z-index: 1040;
+    width: 100%;
 }

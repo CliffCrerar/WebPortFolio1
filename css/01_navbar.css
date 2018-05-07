@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 04:42:35 
- * Last modified  : 2018-04-30 10:30:13
+ * Last modified  : 2018-04-30 23:12:05
  */
 
 /*---------------------------------*/
@@ -101,5 +101,8 @@ div.navbar>div.row:first-child>p {
 }
 
 .mobile>.nav-link{
-    color:white
+    color:white;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 2vh;
+    border-radius: 10px;
 }

@@ -1,0 +1,46 @@
+/**
+ * long description for the file
+ *
+ * @summary This is the css for the intro section
+ * @author Cliff Crerar
+ *
+ * Created at     : 2018-05-02 21:41:54 
+ * Last modified  : 2018-05-02 21:55:35
+ */
+
+
+
+div>h3,
+div>h2 {
+    color: white;
+}
+
+.gr2Title {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2%;
+    border: 0 solid;
+    border-top-width: calc(1px + 0.5vh) !important;
+    border-bottom-width: calc(1px + 0.5vh) !important;
+    border-color: var(--g2titleborder) !important;
+}
+
+.gr2Title>h2 {
+    font-family: lobster;
+}
+
+.gr2Title>h3 {
+    font-family: Space Mono;
+}
+
+.redCar{
+    overflow: hidden !important;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}

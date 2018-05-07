@@ -128,7 +128,8 @@
   }
   
   #group3 .parallax__layer--base {
-      background: rgb(153, 216, 101);
+      background: rgb(153, 216, 101,0.2);
+      /*background: transparent;*/
   }
   
   #group4 {
