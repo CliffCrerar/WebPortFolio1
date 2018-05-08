@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 03:14:56 
- * Last modified  : 2018-05-08 00:11:06
+ * Last modified  : 2018-05-08 02:36:04
  */
 
 /****************************************/
@@ -37,12 +37,13 @@ import 'script-loader!slick-carousel';
 /*           CUSTOM CSS FILES           */
 /****************************************/
 
-/* -  FONTS   */ import './css/_font.css';
-/* 0. GENERAL */ import './css/00_general.css';
-/* 1. NAVBAR  */ import './css/01_navbar.css';
-/* 2. LANDING */ import './css/02_landing.css';
-/* 3. INTRO   */ import './css/03_intro.css';
-/* 4. ABOUT   */ import './css/04_about.css';
+/* -  FONTS       */ import './css/_font.css';
+/* 0. GENERAL     */ import './css/00_general.css';
+/* 1. NAVBAR      */ import './css/01_navbar.css';
+/* 2. LANDING     */ import './css/02_landing.css';
+/* 3. INTRO       */ import './css/03_intro.css';
+/* 4. ABOUT       */ import './css/04_about.css';
+/* 5. PORTFOLIO   */ import './css/05_portfolio.css';
 
 /****************************************/
 /*       CUSTOM JAVASCRIPT FILES        */

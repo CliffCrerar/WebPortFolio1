@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 06:13:30 
- * Last modified  : 2018-05-01 00:02:33
+ * Last modified  : 2018-05-08 02:25:51
  */
 
 $('.burgerIcon').on('click', (ev) => {
@@ -22,7 +22,7 @@ $('.burgerIcon').on('click', (ev) => {
 
 $('.nav-link.desktop').on('click', (ev) => {
     console.log($(ev.currentTarget).attr('href'))
-    $.smoothScroll({
-        scrollTarget: $(ev.currentTarget).attr('href')
-    })
+    //$.smoothScroll({
+    //scrollTarget: $(ev.currentTarget).attr('href')
+    //})
 })

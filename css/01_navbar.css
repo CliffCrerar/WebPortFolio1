@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 04:42:35 
- * Last modified  : 2018-04-30 23:12:05
+ * Last modified  : 2018-05-08 02:08:55
  */
 
 /*---------------------------------*/
@@ -24,23 +24,12 @@
     font-size: var(--nabrandSize) !important;
     width: 10%;
     color: white;
+    transition: text-shadow 1s;
 }
 
 .navbar-brand:hover {
     text-shadow: 10px -10px 5px rgb(255, 255, 255);
     color: white;
-}
-
-a.nav-link:hover {
-    color: black;
-    background-color: rgb(221, 221, 221);
-    opacity: 1;
-    /*
-    -webkit-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
-    -moz-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
-    -o-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
-    transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
-    */
 }
 
 a.nav-link.desktop.active {
@@ -61,9 +50,25 @@ a.nav-link.desktop {
     transition: background-color 1s;
 }
 
+a.nav-link:hover {
+    color: black !important;
+    background-color: rgb(221, 221, 221);
+    opacity: 1;
+    /*
+    -webkit-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+    -o-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+    transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+    */
+}
+
 .navbar>.op {
     opacity: 0.2;
     pointer-events: none;
+}
+
+.nav-link.op{
+    color:white;
 }
 
 div.navbar>div.row {

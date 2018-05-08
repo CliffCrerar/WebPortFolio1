@@ -5,18 +5,21 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 04:32:30 
- * Last modified  : 2018-05-08 01:15:27
+ * Last modified  : 2018-05-08 04:10:49
  */
 
 /* 1. HOME SECTION */
 import tie from '../image/tie.jpg';
-/* 2. INTRO SECTION */
+/* 2. NAVBAR  --NO IMAGES*/
+/* 3. INTRO SECTION */
 import redCar from '../image/redCar.png'
-/* 3. ABOUT SECTION */
-import abtImg1 from '../image/sw5.jpg';
-import abtImg2 from '../image/sw4.jpg';
-import abtImg3 from '../image/avengers1.jpg';
-import abtImg4 from '../image/dc2.jpg';
+/* 4. ABOUT SECTION */
+import abtImg1 from '../image/sp1.jpg';
+import abtImg2 from '../image/sp5.jpg';
+import abtImg3 from '../image/sp3.jpg';
+import abtImg4 from '../image/sp4.jpg';
+/* 5. PORTFOLIO */
+import prtBgImg from '../image/city2.jpg';
 
 /* ALLOCATE IMAGES */
 $('#tie').attr('src', tie)
@@ -25,9 +28,10 @@ $('#abtImg1').attr('src', abtImg1);
 $('#abtImg2').attr('src', abtImg2);
 $('#abtImg3').attr('src', abtImg3);
 $('#abtImg4').attr('src', abtImg4);
+$('#prtBgImg').attr('src', prtBgImg);
 
 /* SOME IMAGE ADJUSTMENTS */
-$('.slick-image').height(window.innerHeight);
+//$('.slick-image').height(window.innerHeight);
 
 /* PERFECT IMAGE SCALING */
 function imageFix() {
@@ -35,31 +39,34 @@ function imageFix() {
     let or = window.orientation // detect orientation
     let vph = window.innerHeight // get screen hieght
     let vpw = window.innerWidth // get screen hieght
-    let sh = screen.height // get screen hieght
-    let sw = screen.width // get screen hieght
     let winRatio = vpw / vph
 
-    console.log(or);
-    console.log('Heights: ', vph, sh)
-    console.log('Widths: ', vpw, sw);
-    console.log('HW Ration - INNER: ', vpw / vph, 'SCREEN: ', sw / sh)
-    console.log(winRatio);
+    //console.log(or);
+    //console.log('Height: ', vph)
+    //console.log('Width: ', vpw);
+    //console.log('HW Ration - INNER: ', vpw / vph, 'SCREEN: ', sw / sh)
+    //console.log(winRatio);
 
     $('img').each((i, img) => {
-        console.log(img)
-        var imgH = $(img).css('height');
-        var imgW = $(img).css('width');
-        var imgRatio = Number(imgW.replace('px', '')) / Number(imgH.replace('px', ''));
+        //console.log(img)
+        var imgH = Number($(img).css('height').replace('px', ''));
+        var imgW = Number($(img).css('width').replace('px', ''));
+        var imgRatio = imgW / imgH
 
-        console.log('IMG H: ', imgH);
-        console.log('IMG W: ', imgW);
-        console.log('H W Ration: ', imgRatio);
-        /*
-        if (winRatio > 1) {
+        //console.log('IMG H: ', imgH);
+        //console.log('IMG W: ', imgW);
+        //console.log('H W Ration: ', imgRatio);
+
+        if (winRatio >= 1 && imgW < vpw) {
+            $(img).css('height', 'auto');
+            $(img).css('width', vpw);
+            //console.log(img);
+        } else {
             $(img).css('height', vph);
             $(img).css('width', 'auto');
+            //console.log(img);
         }
-        */
+
 
         //console.log(img.height);
         //console.log(img.height);
@@ -67,15 +74,13 @@ function imageFix() {
 
 }
 
-$(window).on('orientationchange', (ev) => {
-    console.log(ev);
-    console.log('orientation has changed')
-})
-
 $(window).resize((ev) => {
     console.log(ev);
-    console.log('Resize MF')
+    console.log('Resize MF');
+    $('img').css('height', window.innerHeight);
+    imageFix();
 })
 $(document).ready(() => {
+    $('img').css('height', window.innerHeight);
     imageFix();
 })
