@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 03:14:56 
- * Last modified  : 2018-05-08 02:36:04
+ * Last modified  : 2018-05-08 07:19:38
  */
 
 /****************************************/
@@ -18,7 +18,7 @@ import $ from 'script-loader!jquery'
 import './node_modules/popper.js/dist/esm/popper';
 /* BOOTSTRAP */
 import './node_modules/bootstrap/dist/css/bootstrap.css';
-import './node_modules/bootstrap/dist/js/bootstrap';
+import 'script-loader!./node_modules/bootstrap/dist/js/bootstrap';
 /* PARALAX EFFECT CSS */
 import './css/_parallax.css';
 /* JQUERY USER INTERFACE */

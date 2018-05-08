@@ -5,11 +5,29 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-08 02:29:18 
- * Last modified  : 2018-05-08 02:51:50
+ * Last modified  : 2018-05-08 08:02:35
  */
 
 .deepLayerImage{
-    position: absolute;
-    top: 50% !important;
+    position: relative;
+    top: 50%;
     transform: translateY(-50%);
+}
+
+.projectRail{
+    position: relative;
+    height: 60%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.projects{
+    position: relative;
+    height: 40%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(212, 2, 2, 0.5);
 }
