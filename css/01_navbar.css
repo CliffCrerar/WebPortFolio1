@@ -1,0 +1,113 @@
+/**
+ * long description for the file
+ *
+ * @summary CSS for navigation bar
+ * @author Cliff Crerar
+ *
+ * Created at     : 2018-04-30 04:42:35 
+ * Last modified  : 2018-05-08 02:08:55
+ */
+
+/*---------------------------------*/
+/*        DESKTOP NAV CSS          */
+/*---------------------------------*/
+
+:root {
+    --navgrow: 1;
+    --nabrandSize: calc(35px + 0.2vw);
+}
+
+/* Navigation elements CSS */
+
+.navbar-brand {
+    font-family: Poiret One;
+    font-size: var(--nabrandSize) !important;
+    width: 10%;
+    color: white;
+    transition: text-shadow 1s;
+}
+
+.navbar-brand:hover {
+    text-shadow: 10px -10px 5px rgb(255, 255, 255);
+    color: white;
+}
+
+a.nav-link.desktop.active {
+    color: black;
+    background-color: white;
+    opacity: 1;
+}
+
+a.nav-link.desktop {
+    color: white;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    opacity: 0.6;
+    text-decoration-style: none;
+    text-decoration-color: white;
+    transition: background-color 1s;
+}
+
+a.nav-link:hover {
+    color: black !important;
+    background-color: rgb(221, 221, 221);
+    opacity: 1;
+    /*
+    -webkit-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+    -o-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+    transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+    */
+}
+
+.navbar>.op {
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.nav-link.op{
+    color:white;
+}
+
+div.navbar>div.row {
+    width: 100%;
+    margin: 2%;
+}
+
+div.navbar>div.row:first-child {
+    width: 40%;
+    background-color: rgba(221, 221, 221, 0.5);
+    margin: auto;
+    border: 1px solid black;
+    border-radius: calc(24px + 0.5vh);
+    display: none;
+}
+
+div.navbar>div.row:first-child>p {
+    color: black;
+    margin: 0%;
+    font-size: calc(15px + 1vh);
+    width: 100%;
+}
+
+/*---------------------------------*/
+/*         MOBILE NAV CSS          */
+/*---------------------------------*/
+
+.burgerIcon{
+    border: 2px solid white !important;
+}
+
+.bars{
+    font-size: 30px;
+    color:white;
+}
+
+.mobile>.nav-link{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 2vh;
+    border-radius: 10px;
+}

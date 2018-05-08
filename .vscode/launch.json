@@ -5,33 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Chrome",
-            "type": "chrome",
-            "request": "launch",
-            "url": "http://localhost:5500/index.html",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
+            "name": "Attach",
             "type": "chrome",
             "request": "attach",
-            "name": "Attach to Chrome",
-            "port": 9222,
+            "port": 5512,
+            "url": "http://172.16.0.104:5512/",
             "webRoot": "${workspaceFolder}"
         },
         {
-            "name": "Launch Edge",
-            "type": "edge",
-            "request": "launch",
-            "url": "http://localhost/index.html",
-            "webRoot": "${workspaceRoot}",
-            "sourceMaps": true
-        },
-        {
-            "name": "Launch Firefox",
-            "type": "firefox",
-            "request": "launch",
-            "reAttach": false,
-            "url": "http://localhost:5500/index.html",
+            "name": "Attach to url with files served from ./out",
+            "type": "chrome",
+            "request": "attach",
+            "port": 9222,
+            "url": "<url of the open browser tab to connect to>",
             "webRoot": "${workspaceFolder}"
         }
     ]

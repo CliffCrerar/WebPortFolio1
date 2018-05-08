@@ -1,0 +1,15 @@
+/**
+ * long description for the file
+ *
+ * @summary Css for the portfolio section of the page
+ * @author Cliff Crerar
+ *
+ * Created at     : 2018-05-08 02:29:18 
+ * Last modified  : 2018-05-08 02:51:50
+ */
+
+.deepLayerImage{
+    position: absolute;
+    top: 50% !important;
+    transform: translateY(-50%);
+}

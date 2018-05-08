@@ -1,0 +1,45 @@
+/**
+ * long description for the file
+ *
+ * @summary css for the about page
+ * @author Cliff Crerar
+ *
+ * Created at     : 2018-05-02 22:02:56 
+ * Last modified  : 2018-05-08 04:38:27
+ */
+
+.jumbotron.container-fluid {
+    opacity: 0.7;
+}
+
+h1.jumboHeading {
+    font-family: JOSEFIN SANS/* POIRET ONE JOSEFIN SANS */;
+    font-weight: bold;
+    font-size: calc(100px + 1vh);
+}
+
+.collapserDeskContainer{
+   padding: 0 15px 0 15px;   
+}
+
+@media screen and (max-width:414px){
+    h1.jumboHeading{
+        font-size: 5vh !important;
+    }
+    .btnBox1>.col-md-3>.btn{
+        margin-bottom: 1vw;
+    }
+    .collapserDeskContainer{
+        padding: 0 0 0 0;   
+     }
+}
+
+.slick-carousel{
+    height: 100%;
+    overflow: hidden;
+}
+
+.slick-item{
+    height: 100% !important;
+    width: auto !important;
+}
