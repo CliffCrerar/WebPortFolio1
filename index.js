@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 03:14:56 
- * Last modified  : 2018-05-08 07:19:38
+ * Last modified  : 2018-05-08 18:58:09
  */
 
 /****************************************/
@@ -55,3 +55,4 @@ import 'script-loader!slick-carousel';
 /* LOAD PAGE IMAGES */ import './js/02_loadimages';
 /* NAVBAR OPERATION */ import './js/03_navbar';
 /* ABOUT JS         */ import './js/05_about';
+/* PORTFOLIO        */ import './js/06_portfolio';

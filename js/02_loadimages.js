@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 04:32:30 
- * Last modified  : 2018-05-08 04:10:49
+ * Last modified  : 2018-05-08 18:49:09
  */
 
 /* 1. HOME SECTION */
@@ -20,6 +20,7 @@ import abtImg3 from '../image/sp3.jpg';
 import abtImg4 from '../image/sp4.jpg';
 /* 5. PORTFOLIO */
 import prtBgImg from '../image/city2.jpg';
+import prtImg1 from '../image/tqoffroad.png'
 
 /* ALLOCATE IMAGES */
 $('#tie').attr('src', tie)
@@ -29,6 +30,7 @@ $('#abtImg2').attr('src', abtImg2);
 $('#abtImg3').attr('src', abtImg3);
 $('#abtImg4').attr('src', abtImg4);
 $('#prtBgImg').attr('src', prtBgImg);
+$('#prtImg1').attr('src', prtImg1)
 
 /* SOME IMAGE ADJUSTMENTS */
 //$('.slick-image').height(window.innerHeight);

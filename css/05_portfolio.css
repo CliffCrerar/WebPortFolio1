@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-08 02:29:18 
- * Last modified  : 2018-05-08 08:02:35
+ * Last modified  : 2018-05-08 20:05:15
  */
 
 .deepLayerImage{
@@ -17,17 +17,49 @@
 .projectRail{
     position: relative;
     height: 60%;
-    width: 100%;
+    min-width: 100%;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-
 }
 
 .projects{
     position: relative;
-    height: 40%;
+    height: 50%;
     top: 50%;
+    min-width: 100%;
     transform: translateY(-50%);
     background-color: rgba(212, 2, 2, 0.5);
+}
+
+.pf-card-row{
+    height: 100%;
+    width: 100%;
+}
+
+.pfItem{
+    min-height: 100%;
+    margin-right: 5vw
+}
+
+.pfImageContainer{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.pfImage{
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    height: 100% !important;
+    width: auto !important; 
+}
+
+.pfText{
+    font-size: 15px;
+}
+
+.pfLinkBtn{
+    position: absolute !important;
+    bottom:20px;
 }
