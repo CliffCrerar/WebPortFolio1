@@ -44,7 +44,7 @@ module.exports = function sendMail(data) {
         html: msgHtml // html body
     };
     // send mail with defined transport object
-    transporter.sendMail(mailOptions, function(error, info) {
+    transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
             return console.log(error);
         }

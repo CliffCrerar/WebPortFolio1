@@ -136,10 +136,6 @@
         "workbench.fontAliasing": "default",
         "git.ignoreLimitWarning": true,
         "jsFileHeader.Author": "Cliff Crerar",
-        "jshint.config": ".jshintrc",
-        "jshint.lintHTML": true,
-        "jshint.packageManager": "npm",
-        "jshint.trace.server": "verbose",
         "eslint.enable": true,
         "eslint.provideLintTask": true,
         "eslint.trace.server": "verbose",
@@ -154,6 +150,7 @@
         "liveServer.settings.port": 5512,
         "liveServer.settings.wait": 100,
         "liveServer.settings.root": "/dist",
-        "liveServer.settings.fullReload": true
+        "liveServer.settings.fullReload": true,
+        "editor.fontSize": 12
     }
 }
