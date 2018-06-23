@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 03:14:56 
- * Last modified  : 2018-06-23 02:17:18
+ * Last modified  : 2018-06-23 07:29:02
  */
 
 /****************************************/
@@ -47,6 +47,7 @@ import 'script-loader!slick-carousel';
 /* 5. PORTFOLIO   */ import './css/05_portfolio.css';
 /* 6. SOCIAL      */ import './css/06_social.css';
 /* 7. CONTACT     */ import './css/07_emailMe.css';
+/* 8. THANK YOU   */ import './css/08_thankyou.css'
 
 /****************************************/
 /*       CUSTOM JAVASCRIPT FILES        */
