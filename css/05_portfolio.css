@@ -5,11 +5,120 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-08 02:29:18 
- * Last modified  : 2018-05-08 02:51:50
+ * Last modified  : 2018-06-22 22:55:32
  */
 
-.deepLayerImage{
+.back-section{
+    all: unset;
+}
+
+.backSectionBand{
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 50vh;
     position: absolute;
-    top: 50% !important;
+    top: 50%;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.base-section{
+    all:unset;
+    
+}
+
+.baseSectionBand{
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    overflow: show;
+}
+
+.prtCards{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 100%;
+    animation-name: endlessScroll;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: endlessScroll;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-name: endlessScroll;
+    -o-animation-timing-function: linear;
+    -o-animation-duration: 30s;
+    -o-animation-iteration-count: infinite;
+    -moz-animation-name: endlessScroll;
+    -moz-animation-timing-function: linear;
+    -moz-animation-duration: 30s;
+    -moz-animation-iteration-count: infinite;
+    
+}
+
+.prtCards:hover{
+    animation-play-state: paused
+}
+
+@keyframes endlessScroll{
+    100% {
+        left:-200%;
+    }
+}
+
+@-o-keyframes endlessScroll{
+    100% {
+        left:-200%;
+    }
+}
+@-moz-keyframes endlessScroll{
+    100% {
+        left:-200%;
+    }
+}
+@-webkit-keyframes endlessScroll{
+    100% {
+        left:-200%;
+    }
+}
+
+.prt-card { 
+    margin: 0 2vw 0 2vh;
+}
+
+.prt-img-top{
+    width: auto !important;
+}
+
+.prt-card-body{
+    width: auto !important;
+    
+}
+
+.prt-card-text{
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.prt-card-btn{
+    position: relative;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    border: 0px transparent;
 }

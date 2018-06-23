@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 03:24:15 
- * Last modified  : 2018-05-08 04:18:48
+ * Last modified  : 2018-06-23 03:33:55
  */
 
 /*
@@ -20,8 +20,8 @@
 /* 4.  About                   */ import about from '../html/04_about.html';
 /* 5.  Portfolio               */ import portfolio from '../html/05_portfolio.html'; //import portfolio 
 /* 6.  Social                  */ import social from '../html/06_social.html' //import social 
-/* 7.  Contact                 */ //import contact 
-/* 8.  Credits                 */ //import credits 
+/* 7.  Contact                 */ import contact from '../html/07_emailMe.html'
+/* 8.  Credits                 */ import credits from '../html/08_thankYou.html';
 
 
 /*
@@ -40,11 +40,13 @@ if (window.isMobile) {
 
 /* 0 */
 /* 1 */ $('body').html(navigation);
-/* 2 */ $('.parallax').append(landing);
-/* 3 */ $('.parallax').append(intro);
-/* 4 */ $('.parallax').append(about);
-/* 5 */ $('.parallax').append(portfolio);
-/* 6 */ $('.parallax').append(social);
+/* 2 */ $('main').append(landing);
+/* 3 */ $('main').append(intro);
+/* 4 */ $('main').append(about);
+/* 5 */ $('main').append(portfolio);
+/* 6 */ $('main').append(social);
+/* 7 */ $('main').append(contact);
+/* 8 */ $('main').append(credits);
 
 
 /* SMOOTH SCROLLING */

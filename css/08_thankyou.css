@@ -1,0 +1,13 @@
+/**
+ * CSS for the section 8 of the page
+ * @author Cliff Crerar
+ * Created at     : 2018-06-23 03:35:40 
+ * Last modified  : 2018-06-23 03:40:15
+ */
+
+.ty-bg{
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
+

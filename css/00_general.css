@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 04:44:25 
- * Last modified  : 2018-05-08 02:50:00
+ * Last modified  : 2018-06-23 03:38:13
  */
 
 /* General CSS */
@@ -48,4 +48,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
 }

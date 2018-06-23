@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-08 00:00:27 
- * Last modified  : 2018-05-08 00:13:57
+ * Last modified  : 2018-06-22 19:33:39
  */
 
 const { detect } = require('detect-browser');

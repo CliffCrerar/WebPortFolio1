@@ -4,8 +4,7 @@
   "description": "This is the portfolio of Clifford Crerar",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^4.1.0",
-    "bootstrap-datetime-picker": "^2.4.4",
+    "bootstrap": "^4.1.1",
     "connect": "^3.6.5",
     "detect-browser": "^2.4.0",
     "jquery": "^3.3.1",

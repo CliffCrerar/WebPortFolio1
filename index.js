@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 03:14:56 
- * Last modified  : 2018-05-08 02:36:04
+ * Last modified  : 2018-06-23 02:17:18
  */
 
 /****************************************/
@@ -18,7 +18,7 @@ import $ from 'script-loader!jquery'
 import './node_modules/popper.js/dist/esm/popper';
 /* BOOTSTRAP */
 import './node_modules/bootstrap/dist/css/bootstrap.css';
-import './node_modules/bootstrap/dist/js/bootstrap';
+import 'script-loader!./node_modules/bootstrap/dist/js/bootstrap';
 /* PARALAX EFFECT CSS */
 import './css/_parallax.css';
 /* JQUERY USER INTERFACE */
@@ -33,6 +33,7 @@ import 'script-loader!slick-carousel';
 /* SMOOTH SCROLLING */
 // import 'script-loader!jquery-smooth-scroll';
 
+
 /****************************************/
 /*           CUSTOM CSS FILES           */
 /****************************************/
@@ -44,6 +45,8 @@ import 'script-loader!slick-carousel';
 /* 3. INTRO       */ import './css/03_intro.css';
 /* 4. ABOUT       */ import './css/04_about.css';
 /* 5. PORTFOLIO   */ import './css/05_portfolio.css';
+/* 6. SOCIAL      */ import './css/06_social.css';
+/* 7. CONTACT     */ import './css/07_emailMe.css';
 
 /****************************************/
 /*       CUSTOM JAVASCRIPT FILES        */
@@ -55,3 +58,5 @@ import 'script-loader!slick-carousel';
 /* LOAD PAGE IMAGES */ import './js/02_loadimages';
 /* NAVBAR OPERATION */ import './js/03_navbar';
 /* ABOUT JS         */ import './js/05_about';
+/* PORTFOLIO JS     */ import './js/06_portfolio';
+/* EMAIL ME         */ import './js/07_emailMe';

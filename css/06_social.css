@@ -1,0 +1,85 @@
+/**
+ * CSS for social sectopm
+ * @author Cliff Crerar
+ * Created at     : 2018-06-22 23:03:45 
+ * Last modified  : 2018-06-23 00:07:55
+ */
+
+.social-bg{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.for-section{
+    all:unset;
+}
+
+.social-container{
+    padding: 0 10vw 0 10vw !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+    -webkit-transform: translate(-50%,-50%) ;
+    -moz-transform: translate(-50%,-50%) ;
+    -ms-transform: translate(-50%,-50%) ;
+    -o-transform: translate(-50%,-50%) ;
+    --list-scale: scale(1.1)
+}
+
+.list-group-item:hover{
+    color: white;
+    background: #485057;
+    animation-name: hoverList;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    -o-animation-name: hoverList;
+    -o-animation-duration: 0.5s;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-name: hoverList;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: hoverList;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-fill-mode: forwards;
+}
+
+@keyframes hoverList {
+    100% {
+        transform: var(--list-scale);
+        -o-transform: var(--list-scale);
+        -webkit-transform: var(--list-scale);
+        -moz-transform: var(--list-scale);
+        -ms-transform: var(--list-scale);
+    }
+}
+
+@-moz-keyframes hoverList{
+    100% {
+        transform: var(--list-scale);
+        -o-transform: var(--list-scale);
+        -webkit-transform: var(--list-scale);
+        -moz-transform: var(--list-scale);
+        -ms-transform: var(--list-scale);
+    }
+}
+
+@-o-keyframes hoverList{
+    100%{
+        transform: var(--list-scale);
+        -o-transform: var(--list-scale);
+        -webkit-transform: var(--list-scale);
+        -moz-transform: var(--list-scale);
+        -ms-transform: var(--list-scale);
+    }
+}   
+@-webkit-keyframes hoverList{
+    100% {
+        transform: var(--list-scale);
+        -o-transform: var(--list-scale);
+        -webkit-transform: var(--list-scale);
+        -moz-transform: var(--list-scale);
+        -ms-transform: var(--list-scale);
+    }
+}
