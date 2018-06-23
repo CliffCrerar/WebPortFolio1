@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 03:14:56 
- * Last modified  : 2018-06-23 07:29:02
+ * Last modified  : 2018-06-23 15:02:45
  */
 
 /****************************************/
@@ -30,8 +30,6 @@ import './fontawesome5/web-fonts-with-css/css/fontawesome-all.css';
 import './node_modules/slick-carousel/slick/slick.css';
 import './node_modules/slick-carousel/slick/slick-theme.css'
 import 'script-loader!slick-carousel';
-/* SMOOTH SCROLLING */
-// import 'script-loader!jquery-smooth-scroll';
 
 
 /****************************************/
@@ -53,11 +51,14 @@ import 'script-loader!slick-carousel';
 /*       CUSTOM JAVASCRIPT FILES        */
 /****************************************/
 
-/* DETECT BROWSERT  */ import './js/_detectBrowser'
-/* CHECK FOR MOBILE */ import './js/_isMobile';
-/* LOAD PAGE HTML   */ import './js/01_loadhtml';
-/* LOAD PAGE IMAGES */ import './js/02_loadimages';
-/* NAVBAR OPERATION */ import './js/03_navbar';
-/* ABOUT JS         */ import './js/05_about';
-/* PORTFOLIO JS     */ import './js/06_portfolio';
-/* EMAIL ME         */ import './js/07_emailMe';
+/* DETECT BROWSERT    */ import './js/_detectBrowser'
+/* CHECK FOR MOBILE   */ import './js/_isMobile';
+/* LOAD PAGE HTML     */ import './js/00_loadhtml';
+/* LANDING PAGE       */ import './js/01_landing'
+/* LOAD PAGE IMAGES   */ import './js/02_loadimages';
+/* NAVBAR OPERATION   */ import './js/03_navbar';
+/* ABOUT JS           */ import './js/05_about';
+/* PORTFOLIO JS       */ import './js/06_portfolio';
+/* EMAIL ME           */ import './js/07_emailMe';
+/* NAVIGATION CONTROL */ import './js/_navigationControl'
+

@@ -2,7 +2,7 @@
  * CSS for the section 8 of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-23 03:35:40 
- * Last modified  : 2018-06-23 10:45:00
+ * Last modified  : 2018-06-23 11:35:31
  */
 
 @import url('https://fonts.googleapis.com/css?family=Yellowtail');
@@ -115,7 +115,7 @@
         border-color: rgb(255, 74, 74);
     }
     40%{
-        border-color: rgb(56, 56, 255);
+        border-color: rgb(17, 17, 61);
     }
     60%{
         border-color: rgb(255, 255, 120);
@@ -124,7 +124,7 @@
         border-color: rgb(17, 255, 17);
     }
     100%{
-        border-color: azure;
+        border-color: rgb(199, 28, 199);;
     }
 }
 
@@ -145,7 +145,7 @@
         border-color: rgb(17, 255, 17);
     }
     100%{
-        border-color: azure;
+        border-color: rgb(199, 28, 199);;
     }
 }
 
@@ -166,7 +166,7 @@
         border-color: rgb(17, 255, 17);
     }
     100%{
-        border-color: azure;
+        border-color: rgb(199, 28, 199);
     }
 }
 
@@ -187,7 +187,7 @@
         border-color: rgb(17, 255, 17);
     }
     100%{
-        border-color: azure;
+        border-color: rgb(199, 28, 199);;
     }
 }
 

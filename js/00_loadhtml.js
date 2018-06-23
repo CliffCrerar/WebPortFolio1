@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 03:24:15 
- * Last modified  : 2018-06-23 07:41:26
+ * Last modified  : 2018-06-23 14:53:54
  */
 
 /*
@@ -47,9 +47,6 @@ if (window.isMobile) {
 /* 6 */ $('main').append(social);
 /* 7 */ $('main').append(contact);
 /* 8 */ $('main').append(credits);
-
-
-/* SMOOTH SCROLLING */
 
 /* SOME HTML ADJUSTMENT */
 //$('.parallax__group').css('height', window.innerHeight);
