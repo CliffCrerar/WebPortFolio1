@@ -1,38 +1,12 @@
 /**
  * long description for the file
- *
  * @summary css for the about page
  * @author Cliff Crerar
- *
- * Created at     : 2018-05-02 22:02:56 
- * Last modified  : 2018-06-23 20:36:11
+ * Created at     : 2018-05-02 22:02:56
+ * Last modified  : 2018-06-25 18:46:51
  */
 
-.jumbotron.container-fluid {
-    opacity: 0.7;
-}
-
-h1.jumboHeading {
-    font-family: JOSEFIN SANS/* POIRET ONE JOSEFIN SANS */;
-    font-weight: bold;
-    font-size: calc(100px + 1vh);
-}
-
-.collapserDeskContainer{
-   padding: 0 15px 0 15px;   
-}
-
-@media screen and (max-width:414px){
-    h1.jumboHeading{
-        font-size: 5vh !important;
-    }
-    .btnBox1>.col-md-3>.btn{
-        margin-bottom: 1vw;
-    }
-    .collapserDeskContainer{
-        padding: 0 0 0 0;   
-     }
-}
+/* for bacground carousel*/
 
 .slick-carousel{
     height: 100%;
@@ -43,6 +17,8 @@ h1.jumboHeading {
     height: 100% !important;
     width: auto !important;
 }
+
+/* Content css */
 
 .fore-subsection{
     position: absolute;
@@ -61,3 +37,32 @@ h1.jumboHeading {
     font-weight: bold;
     font-size: calc(100px + 1vh);
 }
+
+.abt-card{
+    height: 90vh;
+}
+
+.abt-card-header{
+    height: 100px !important;
+}
+
+.abt-btn{
+    width: 20%;
+}
+
+.about-details-section {
+    overflow: scroll;
+}
+
+.abt-scroller>h3 {
+    color: black
+}
+
+.abt-scroller>p {
+    font-size: 0.5em;;
+}
+
+.card-footer{
+    font-size: 0.5em;
+}
+
