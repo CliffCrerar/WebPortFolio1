@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-02 22:02:56 
- * Last modified  : 2018-06-22 23:03:34
+ * Last modified  : 2018-06-23 20:36:11
  */
 
 .jumbotron.container-fluid {
@@ -42,4 +42,22 @@ h1.jumboHeading {
 .slick-item{
     height: 100% !important;
     width: auto !important;
+}
+
+.fore-subsection{
+    position: absolute;
+    bottom: 0;
+    height: 90vh;
+    width: 100vw;
+}
+
+.about-left, .about-right{
+    height: 100%;
+    border: 1px solid wheat
+}
+
+.abt-sub-title{
+    font-family: JOSEFIN SANS/* POIRET ONE JOSEFIN SANS */;
+    font-weight: bold;
+    font-size: calc(100px + 1vh);
 }

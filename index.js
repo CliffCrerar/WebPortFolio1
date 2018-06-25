@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 03:14:56 
- * Last modified  : 2018-06-23 15:02:45
+ * Last modified  : 2018-06-23 21:20:48
  */
 
 /****************************************/
@@ -25,7 +25,7 @@ import './css/_parallax.css';
 import 'webpack-jquery-ui';
 import 'webpack-jquery-ui/css';
 /* FONT AWESOME 5 */
-import './fontawesome5/web-fonts-with-css/css/fontawesome-all.css';
+import './fontawesome5/css/all.css';
 /* SLICK CAROUSEL */
 import './node_modules/slick-carousel/slick/slick.css';
 import './node_modules/slick-carousel/slick/slick-theme.css'
