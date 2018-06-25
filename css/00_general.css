@@ -5,13 +5,13 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 04:44:25 
- * Last modified  : 2018-06-23 03:38:13
+ * Last modified  : 2018-06-26 00:43:07
  */
 
 /* General CSS */
 
 :root {
-    --g2titleborder: silver;
+    --g2titleborder: #c0c0c0;
     --cardBorderRadius: calc(.25rem + 24px);
     --cardBorderRadiusB: calc(.25rem + 24px);
 }
