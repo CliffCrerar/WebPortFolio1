@@ -2,7 +2,7 @@
  * CSS for social sectopm
  * @author Cliff Crerar
  * Created at     : 2018-06-22 23:03:45 
- * Last modified  : 2018-06-23 00:07:55
+ * Last modified  : 2018-06-25 22:44:32
  */
 
 .social-bg{
@@ -43,6 +43,7 @@
     -moz-animation-name: hoverList;
     -moz-animation-duration: 0.5s;
     -moz-animation-fill-mode: forwards;
+
 }
 
 @keyframes hoverList {
@@ -52,7 +53,12 @@
         -webkit-transform: var(--list-scale);
         -moz-transform: var(--list-scale);
         -ms-transform: var(--list-scale);
-    }
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+}
 }
 
 @-moz-keyframes hoverList{

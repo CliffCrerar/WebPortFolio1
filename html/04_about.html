@@ -1,48 +1,69 @@
 <!doctype html>
 <html>
-    <!--About-->
-    <section id="group3" class="parallax__group vs-section">
+<!--About-->
+<section id="group3" class="parallax__group vs-section">
 
-        <!--About foreground-->
-        <div class="parallax__layer parallax__layer--fore">
-            <div class="container-fluid">
-                <div class="row fore-subsection">
-                    <div class="about-left col-sm-6">
-                        <h1 class="abt-sub-title display-1">
-                            iCode
-                            <span class="fas fa-code"></span>
-                        </h1>
-                        <h1 class="abt-sub-title display-1">
-                            iBuild
-                            <span class="fas fa-drafting-compass"></span>
-                        </h1>
-                        <h1 class="abt-sub-title display-1">iSolve</h1>
+    <!--About foreground-->
+    <div class="parallax__layer parallax__layer--fore abt-overlay">
+        <div class="container-fluid">
+            <div class="row fore-subsection">
+
+                <div class="about-left col-sm-6">
+
+                    <div class="d-flex flex-column bd-highlight mb-3 justify-content-around">
+                        <div class="abt-left-item abt-left-item-1">
+                            <h1 class="abt-sub-title display-1">
+                                iCode
+                                <span class="fas fa-code"></span>
+                            </h1>
+                        </div>
+
+                        <div class="abt-left-item abt-left-item-2">
+                            <h1 class="abt-sub-title display-1 text-center">
+                                iBuild
+                                <span class="fas fa-drafting-compass"></span>
+                            </h1>
+                        </div>
+
+                        <div class="abt-left-item abt-left-item-3">
+                            <h1 class="abt-sub-title display-1 text-right">
+                                <span class="fas fa-puzzle-piece"></span>
+                                iSolve
+                            </h1>
+                        </div>
                     </div>
-                    <div class="about-right col-sm-6">
-                        <div class="card abt-card">
-                            <div id="scroll-spy-nav" class="card-header d-flex justify-content-between abt-card-header">
-                                <button class="btn btn-outline-primary abt-btn">Profession</button>
-                                <button class="btn btn-outline-primary abt-btn">Education</button>
-                                <button class="btn btn-outline-primary abt-btn">Interests</button>
-                                <button class="btn btn-outline-primary abt-btn">Goals</button>
-                            </div>
-                            <div class="card-body about-details-section">
-                                <div class="abt-scroller" data-spy="scroll" data-target="#scroll-spy-nav" data-offset="0">
-                                    <h3 id="profesison">Profesison</h3>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
 
-                                        <br>
-                                        <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                                        id est laborum.
+                <div class="about-right col-sm-6">
+                    <div class="card abt-card card text-white">
+                        <div class="card-header abt-card-header">
+                            <div id="scroll-spy-nav" class="d-flex justify-content-between abt-btn-container">
+                                <a href="#profession" class="btn btn-outline-warning abt-btn abt-btn-left">Profession</a>
+                                <a href="#education" class="btn btn-outline-warning abt-btn abt-btn-center">Education</a>
+                                <a href="#interests" class="btn btn-outline-warning abt-btn abt-btn-center">Interests</a>
+                                <a href="#goals" class="btn btn-outline-warning abt-btn abt-btn-right">Goals</a>
+                            </div>
+                        </div>
+                        <div class="card-body abt-card-body">
+                            <div>
+                                <div class="abt-scroller" data-spy="scroll" data-target="#scroll-spy-nav">
+                                    <h3 id="profession">Profession</h3>
+                                    <p class="text-justify">
+                                        <img class="abt-img-st-logo float-right" src="../image/st_logo.jpg" alt="Surtech Logo"> At the moment I spend my working hours at a company named SurTech (pty) ltd as a
+                                        solutions architect. The work revolves around product development in data analytics
+                                        for the finance, tax and audit sector. I am part of a high preforming agile team.
+                                        My role is to devise solutions for problems identified by the product manager. In
+                                        my daily tasks I am expected to work with the team to achieve our bi-weekly goals,
+                                        conduct research on topics that require decision making, familiar myself with enterprise
+                                        resource system data structures, such as Oracle E-Business suite and Microsoft dynamics.
+                                        I must do this in order to design standard data structures apply predefined audit
+                                        analytics to data extracted from theses ERP systems.
+                                        <img class="abt-img-acl-logo float-left" src="../image/acl_logo.jpg" alt="Surtech Logo">Our analytics suite is named
+                                        <strong>ACL Essentials</strong> because the analytics are designed to run in ACL. ACL is
+                                        a special data analysis application, a leader in its class, that allows user to handle,
+                                        interpret and analyse huge amounts of raw data. I am also expected to develop applications
+                                        for tax, as well as applications to assist the implementation of audit analytics.
+                                        My job is highly satisfying.
                                     </p>
                                     <h3 id="education">Education</h3>
                                     <p>
@@ -94,49 +115,54 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-footer">
+                        </div>
+
+                        <div class="card-footer abt-card-footer">
+                            <div class="float-right">
                                 will put in some kind if quote
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--About foreground-->
-
-        <!--About background-->
-        <div class="parallax__layer parallax__layer--base">
-
-            <!--Carousel-->
-            <div id="carousel1" class="slick-carousel">
-
-                <!--slide 1-->
-                <div class="slick-item">
-                    <img id="abtImg1" class="slick-image" alt="First slide">
-                </div>
-
-                <!--slide 2-->
-                <div class="slick-item">
-                    <img id="abtImg2" class="slick-image" alt="Second slide">
-                </div>
-
-                <!--slide 3-->
-                <div class="slick-item">
-                    <img id="abtImg3" class="slick-image" alt="Third slide">
-                </div>
-
-                <!--slide 4-->
-                <div class="slick-item">
-                    <img id="abtImg4" class="slick-image" alt="Fourth slide">
-                </div>
 
             </div>
-            <!--Carousel-->
+        </div>
+    </div>
+    <!--About foreground-->
+
+    <!--About background-->
+    <div class="parallax__layer parallax__layer--base">
+
+        <!--Carousel-->
+        <div id="carousel1" class="slick-carousel">
+
+            <!--slide 1-->
+            <div class="slick-item">
+                <img id="abtImg1" class="slick-image" alt="First slide">
+            </div>
+
+            <!--slide 2-->
+            <div class="slick-item">
+                <img id="abtImg2" class="slick-image" alt="Second slide">
+            </div>
+
+            <!--slide 3-->
+            <div class="slick-item">
+                <img id="abtImg3" class="slick-image" alt="Third slide">
+            </div>
+
+            <!--slide 4-->
+            <div class="slick-item">
+                <img id="abtImg4" class="slick-image" alt="Fourth slide">
+            </div>
 
         </div>
-        <!--About background-->
+        <!--Carousel-->
 
-    </section>
-    <!--About-->
+    </div>
+    <!--About background-->
+
+</section>
+<!--About-->
 
 </html>
