@@ -98,7 +98,6 @@
         "jsDocCompletion.enabled": true,
         "problems.autoReveal": true,
         "eslint.autoFixOnSave": true,
-        "jshint.enable": true,
         "emmet.showExpandedAbbreviation": "always",
         "emmet.showAbbreviationSuggestions": true,
         "emmet.showSuggestionsAsSnippets": true,

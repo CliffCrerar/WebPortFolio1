@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-04-30 03:04:54 
- * Last modified  : 2018-04-30 05:53:40
+ * Last modified  : 2018-06-27 18:27:41
  */
 
 const path = require('path');
@@ -23,17 +23,10 @@ module.exports = {
     module: {
         rules: [
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+            { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, use: ['url-loader?limit=10000&mimetype=application/font-woff'] },
+            { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, use: ['file-loader'] },
             {
-                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                use: ['url-loader?limit=10000&mimetype=application/font-woff']
-            },
-            {
-                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                use: ['file-loader']
-            },
-            {
-                test: /\.scss$/,
-                use: [
+                test: /\.scss$/, use: [
                     {
                         loader: 'style-loader' // creates style nodes from JS strings
                     },
