@@ -13,7 +13,7 @@
     "popper.js": "^1.14.3",
     "slick-carousel": "^1.8.1",
     "webpack-jquery-ui": "^2.0.0",
-    "snyk": "^1.193.1"
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
