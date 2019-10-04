@@ -14,3 +14,8 @@ patch:
   'npm:qs:20140806-1':
     - node.js > express > connect > qs:
         patched: '2019-07-14T01:14:19.764Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T07:44:45.409Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T07:44:45.409Z'
